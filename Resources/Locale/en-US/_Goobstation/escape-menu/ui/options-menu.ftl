@@ -9,3 +9,6 @@ ui-options-coalesce-identical-messages = Coalesce identical messages in chat
 ui-options-auto-focus-search-on-build-menu = Automatically focus the search input when the build menu is opened
 
 ui-options-hud-theme-coscult = Cosmic Cult
+
+ui-options-admin-notifications-title = Admin Notifications
+ui-options-admin-notifications-volume = Admin Notification Volume
