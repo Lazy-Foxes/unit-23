@@ -97,6 +97,7 @@
     - ChaplainUndeterminedBible
     - RubberStampChaplain
     - Nullrod
+    - ArmamentsBeacon # Goobstation
 
 - type: chameleonOutfit
   id: ChaplainChameleonOutfit
