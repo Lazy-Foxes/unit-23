@@ -230,6 +230,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.75
   - type: FlashSoundSuppression # Goobstation
+  - type: FaceHuggerBlocker # Goobstation
   #- type: HideLayerClothing    #Goobstation
   #  layers:
   #    Hair: HEAD
@@ -270,6 +271,7 @@
         Blunt: 0.35
         Slash: 0.35
         Piercing: 0.8
+  - type: FaceHuggerBlocker # Goobstation
   #- type: HideLayerClothing  #Goobstation
   #  layers:
   #    Hair: HEAD
@@ -339,6 +341,7 @@
         Slash: 0.45
         Piercing: 0.45
         Heat: 0.45
+  - type: FaceHuggerBlocker # Goobstation
   #- type: HideLayerClothing  #Goobstation
   #  layers:
   #    Hair: HEAD
@@ -372,6 +375,7 @@
         Slash: 0.8
         Piercing: 0.8
         Heat: 0.8
+  - type: FaceHuggerBlocker # Goobstation
 
 #Knight Helmet
 - type: entity
@@ -392,6 +396,7 @@
   - type: Tag
     tags:
     - TemplarHelmet
+  - type: FaceHuggerBlocker # Goobstation
 
 #Thunderdome Helmet
 - type: entity
@@ -430,6 +435,7 @@
         Slash: 0.45
         Piercing: 0.45
         Heat: 0.45
+  - type: FaceHuggerBlocker # Goobstation
   #- type: HideLayerClothing  #Goobstation
   #  layers:
   #    Hair: HEAD
@@ -551,6 +557,7 @@
         Piercing: 0.5
         Heat: 0.5
         Caustic: 0.5
+  - type: FaceHuggerBlocker # Goobstation
   #- type: HideLayerClothing  #Goobstation
   #  layers:
   #    Hair: HEAD
@@ -567,6 +574,7 @@
     sprite: Clothing/Head/Helmets/ert_leader.rsi
   - type: Clothing
     sprite: Clothing/Head/Helmets/ert_leader.rsi
+  - type: FaceHuggerBlocker # Goobstation
  # - type: HideLayerClothing  #Goobstation
  #   layers:
  #     Hair: HEAD
