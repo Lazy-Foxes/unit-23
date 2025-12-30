@@ -152,8 +152,6 @@
     pingSound: null
     viewRange: 3 # Goob value
 
->>>>>>> 2549ec061e ([Feature] Body Types (#180))
-
 - type: entity
   parent: BaseSpeciesDummy
   id: MobDwarfDummy

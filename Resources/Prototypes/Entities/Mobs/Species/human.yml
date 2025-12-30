@@ -182,7 +182,6 @@
             sprite: _White/Mobs/Species/Human/displacement.rsi
             state: suit
       # WD EDIT END
->>>>>>> 2549ec061e ([Feature] Body Types (#180))
 #  - type: Sprinter # Goob Change: human major # Maid true -> false
 #    staminaDrainRate: 8
 
