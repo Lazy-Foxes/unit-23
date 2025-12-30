@@ -835,6 +835,11 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("integer")
                         .HasColumnName("age");
 
+                    b.Property<string>("BodyType")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("body_type");
+
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("text")
@@ -1309,13 +1314,6 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Property<Guid?>("BanningAdmin")
                         .HasColumnType("uuid")
                         .HasColumnName("banning_admin");
-
-                    // WD EDIT START
-                    b.Property<string>("BodyType")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("body_type");
-                    // WD EDIT END
 
                     b.Property<int>("ExemptFlags")
                         .HasColumnType("integer")
