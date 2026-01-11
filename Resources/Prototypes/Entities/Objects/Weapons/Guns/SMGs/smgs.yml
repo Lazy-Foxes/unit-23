@@ -122,16 +122,6 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 500
-  # Goobstation edit start
-  - type: EmitSoundOnPickup
-    sound:
-      collection: SMGPickUp
-  - type: EmitSoundOnDrop
-    sound:
-      collection: SMGDrop
-  - type: EmitSoundOnLand
-    sound:
-      collection: SMGDrop
   - type: RestrictGunshotsByUserTag # Goobstation
     doesntContain:
     - Oni
@@ -139,7 +129,6 @@
     - oni-cannot-shoot-guns-1
     - oni-cannot-shoot-guns-2
     - oni-cannot-shoot-guns-3
-  # Goobstation edit end
   - type: Multishot # Goobstation V
     missChance: 0.4
     spreadMultiplier: 3

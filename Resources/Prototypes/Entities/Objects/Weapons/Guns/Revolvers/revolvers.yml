@@ -115,12 +115,6 @@
     missChance: 0.4
     spreadMultiplier: 3
     spreadAddition: 40
-  - type: EmitSoundOnPickup
-    sound:
-      collection: RevolversPickUp
-  - type: EmitSoundOnDrop
-    sound:
-      collection: RevolversDrop
   - type: RestrictGunshotsByUserTag # Goobstation
     doesntContain:
     - Oni
@@ -128,10 +122,6 @@
     - oni-cannot-shoot-guns-1
     - oni-cannot-shoot-guns-2
     - oni-cannot-shoot-guns-3
-  - type: EmitSoundOnLand
-    sound:
-      collection: RevolversDrop
-  # Goobstation edit end
 
 - type: entity
   name: Deckard

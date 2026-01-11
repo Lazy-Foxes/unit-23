@@ -180,16 +180,6 @@
     - oni-cannot-shoot-guns-1
     - oni-cannot-shoot-guns-2
     - oni-cannot-shoot-guns-3
-  - type: EmitSoundOnPickup
-    sound:
-      collection: PistolsPickUp
-  - type: EmitSoundOnDrop
-    sound:
-      collection: PistolsDrop
-  - type: EmitSoundOnLand
-    sound:
-      collection: PistolsDrop
-  # Goobstation edit end
   - type: AltFireMelee
     attackType: Heavy
   - type: MeleeWeapon

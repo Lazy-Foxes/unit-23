@@ -39,6 +39,9 @@ public enum SlotFlags
     LEGS = 1 << 13,
     FEET = 1 << 14,
     SUITSTORAGE = 1 << 15,
+    UNDERWEART = 1 << 16, // Maid
+    UNDERWEARB = 1 << 17, // Maid
+    SOCKS = 1 << 18,      // Maid
     All = ~NONE,
 
     WITHOUT_POCKET = All & ~POCKET

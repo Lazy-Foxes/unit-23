@@ -92,7 +92,6 @@
       collection: Keyboard
       params:
         volume: -1
-        variation: 0.10
         pitch: 1.10  # low pitch keyboard sounds feel kinda weird
     blacklist:
       tags:
@@ -112,16 +111,6 @@
   - type: Wires
     boardName: wires-board-name-computer
     layoutId: Computer
-  - type: SpamEmitSound # Goobstation - random lathe sounds
-    minInterval: 45
-    maxInterval: 120
-    sound:
-      collection: MonoComputerSFX
-      params:
-        volume: -12 # Ambient
-        maxDistance: 10
-        variation: 0.05
-  - type: SpamEmitSoundRequirePower # Goobstation
   - type: InteractedBlacklist # Goobstation - xenos too stupid to use computer
     blacklist:
       components:

@@ -44,4 +44,14 @@ public sealed class MaidCVars
         CVarDef.Create("tts.max_cache", 250, CVar.SERVERONLY | CVar.ARCHIVE);
 
     #endregion
+
+    #region Misc
+
+    /// <summary>
+    ///     Are height/width sliders enabled
+    /// </summary>
+    public static readonly CVarDef<bool> HeightSliders =
+        CVarDef.Create("maid.height_sliders_enabled", false, CVar.SERVER | CVar.REPLICATED);
+
+    #endregion
 }

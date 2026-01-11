@@ -67,7 +67,7 @@
     - name: gloves
       slotTexture: gloves
       slotFlags: GLOVES
-      uiWindowPos: 2,1
+      uiWindowPos: 2,2
       strippingWindowPos: 2,2
       displayName: Gloves
     - name: neck
@@ -93,7 +93,7 @@
       slotTexture: ears
       slotFlags: EARS
       stripTime: 3
-      uiWindowPos: 2,2
+      uiWindowPos: 2,3
       strippingWindowPos: 2,0
       displayName: Ears
     - name: head
@@ -192,3 +192,36 @@
       dependsOnComponents:
       - type: AllowSuitStorage
       displayName: Suit Storage
+
+  # Maid Start
+    - name: socks # Maid
+      slotTexture: socks
+      slotFlags: SOCKS
+      stripTime: 6
+      uiWindowPos: 2,1
+      strippingWindowPos: 3,3
+      displayName: Socks
+      whitelist:
+        tags:
+        - socks
+    - name: underwearb # Maid
+      slotTexture: underwearb
+      slotFlags: UNDERWEARB
+      stripTime: 6
+      uiWindowPos: 3,1
+      strippingWindowPos: 3,2
+      displayName: Panties
+      whitelist:
+        tags:
+        - underwearb
+    - name: underweart # Maid
+      slotTexture: underweart
+      slotFlags: UNDERWEART
+      stripTime: 6
+      uiWindowPos: 3,2
+      strippingWindowPos: 3,1
+      displayName: Bra
+      whitelist:
+        tags:
+        - underweart
+  # Maid End

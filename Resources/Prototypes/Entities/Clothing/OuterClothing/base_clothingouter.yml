@@ -143,28 +143,9 @@
   parent: Clothing
   id: ClothingOuterBase
   components:
-  # Goobstation edit start
-  - type: EmitSoundOnPickup
-    sound:
-      collection: GenericPickup
-      params:
-        volume: -9
-  - type: EmitSoundOnDrop
-    sound:
-      collection: GenericDrop
-      params:
-        volume: -9
-  - type: EmitSoundOnLand
-    sound:
-      collection: GenericDrop
-      params:
-        volume: -9
   - type: Clothing
     slots:
     - outerClothing
-    equipSound:
-      collection: GenericEquip
-  # Goobstation edit end
   - type: Sprite
     state: icon
 

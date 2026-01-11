@@ -27,11 +27,11 @@ concurrency:
 
 on:
   push:
-    branches: [ master, staging, stable ]
+    branches: [ master, main, staging, stable ]
   merge_group:
   pull_request:
     types: [ opened, reopened, synchronize, ready_for_review ]
-    branches: [ master, staging, stable ]
+    branches: [ master, main, staging, stable ]
 
 jobs:
   build:

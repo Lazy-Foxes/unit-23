@@ -34,6 +34,7 @@ using System.Numerics;
 using Content.Shared._White.Humanoid.Prototypes;
 using Content.Shared.Examine;
 using Content.Shared.Humanoid.Markings;
+using Content.Shared._Maid.CVars;
 using Content.Shared._Shitmed.Humanoid.Events; // Shitmed Change
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.IdentityManagement;
@@ -90,6 +91,8 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         { Sex.Female, "Charlotte" },
         { Sex.Unsexed, "SpaceCore" },
     };
+
+    private bool _heightSlidersEnabled;
     //Maid edit end
 
     public override void Initialize()
@@ -98,6 +101,8 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         SubscribeLocalEvent<HumanoidAppearanceComponent, ComponentInit>(OnInit);
         SubscribeLocalEvent<HumanoidAppearanceComponent, ExaminedEvent>(OnExamined);
+
+        Subs.CVar(_cfgManager, MaidCVars.HeightSliders, value => _heightSlidersEnabled = value, true); // Maid
     }
 
     public DataNode ToDataNode(HumanoidCharacterProfile profile)
@@ -627,7 +632,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         // begin Goobstation: port EE height/width sliders
         var species = _proto.Index(humanoid.Species);
 
-        if (profile.Height <= 0 || profile.Width <= 0)
+        if (!_heightSlidersEnabled || profile.Height <= 0 || profile.Width <= 0) // Maid edit
             SetScale(uid, new Vector2(species.DefaultWidth, species.DefaultHeight), true, humanoid);
         else
             SetScale(uid, new Vector2(profile.Width, profile.Height), true, humanoid);
