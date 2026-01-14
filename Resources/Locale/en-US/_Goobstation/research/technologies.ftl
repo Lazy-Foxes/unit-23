@@ -37,5 +37,6 @@ research-technology-mag-fed-sniper = Energy Cell Snipers
 research-technology-mag-fed-lmg = Energy Cell Light Machine Guns
 research-technology-restraint = Restraint Technologies
 research-technology-xenobiology = Xenobiological Equipment
+research-technology-xenobag-holding = Bluespace Xenobiological Equipment
 research-technology-advanced-power-generation = Advanced Power Generation
 research-technology-extended-communication = Extended Communications
