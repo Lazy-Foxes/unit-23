@@ -125,3 +125,8 @@ roles-laughter-demon-name-token = Laughter Demon (Token)
 ghost-role-information-ancient-rogue-king-name-token = Ancient Rogue King (Token)
 ghost-role-information-wraith-name-token = Wraith (Token)
 ghost-role-information-slasher-token = The Slasher (Token)
+
+ghost-role-information-contractor-name = Syndicate Contractor
+ghost-role-information-contractor-token = Syndicate Contractor (Token)
+ghost-role-information-contractor-description = GET DA... tider..?
+contractor-role-greeting = You are a [color=#611b2b]Syndicate Contractor[/color], a bounty hunter, you are tasked with retreving targets from the station, dead or alive.
