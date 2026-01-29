@@ -348,6 +348,8 @@
     - id: ClothingUniformJumpsuitChiefEngineer
     - id: ClothingShoesColorBrown
     # Goobstation V
+    - id: SupermatterComputerCircuitboard
+    - id: BaseHandheldStationMapSupermatterCe
     # - id: BaseHandheldStationMapPowerCe
     - id: EngineeringTechFabCircuitboard
 #    - id: CartridgeRocketSingularityBuster
