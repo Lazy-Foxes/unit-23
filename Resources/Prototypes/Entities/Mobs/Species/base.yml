@@ -505,6 +505,7 @@
   - type: MindControllable # Goobstation
   - type: VisibleContraband # Goobstation
   - type: TTS #Maid
+  - type: MomentumSteering # Goobstation - No steer
 
 - type: entity
   save: false
