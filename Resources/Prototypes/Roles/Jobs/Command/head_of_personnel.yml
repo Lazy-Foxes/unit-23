@@ -159,8 +159,8 @@
   guides: # goobstation
   - Command
   - Succession
-  - StandardProcedures SOP
-  - HeadOfPersonnel SOP
+  - StandardProceduresSOP
+  - HeadOfPersonnelSOP
   - Writing
   weight: 20
   startingGear: HoPGear
@@ -209,6 +209,7 @@
     #gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard
+    eyes: ClothingEyesHudCommand
   storage:
     back:
     - Flash

@@ -85,7 +85,7 @@
   guides: # goobstation
   - Forensics
   - Security
-  - Detective SOP
+  - DetectiveSOP
   access:
   - Security
   - Brig

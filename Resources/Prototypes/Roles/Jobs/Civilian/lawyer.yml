@@ -78,7 +78,7 @@
   supervisors: job-supervisors-hop
   guides: # goobstation
   - SpaceLaw
-  - Legal SOP
+  - LegalSOP
   access:
   - Service
   - Lawyer

@@ -115,8 +115,8 @@
   canBeAntag: false
   guides: # goobstation
   - Security
-  - OfficerCadet SOP
-  - Searches SOP
+  - OfficerCadetSOP
+  - SearchesSOP
   access:
   - Security
   - Brig
