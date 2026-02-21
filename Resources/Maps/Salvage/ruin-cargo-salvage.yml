@@ -1853,7 +1853,7 @@ entities:
     - type: Transform
       pos: -8.162452,-4.5786843
       parent: 16
-- proto: GoldOre1
+- proto: GoldOre1Unprocessed
   entities:
   - uid: 142
     components:
@@ -2624,7 +2624,7 @@ entities:
     - type: Transform
       pos: 1.5,-8.5
       parent: 16
-- proto: SilverOre1
+- proto: SilverOre1Unprocessed
   entities:
   - uid: 159
     components:

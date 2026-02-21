@@ -1,5 +1,7 @@
 # User interface
-comms-console-menu-title = Консоль связи
+# Maid
+comms-console-menu-title = Коммуникационная консоль
+# MaidEnd
 comms-console-menu-announcement-placeholder = Текст объявления...
 comms-console-menu-announcement-button = Сделать объявление
 comms-console-menu-announcement-button-tooltip = Отправьте своё сообщение в качестве радиообъявления на всю станцию.

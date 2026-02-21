@@ -230,7 +230,7 @@
           collection: GlassBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          SteelOre1:
+          SteelOre1Unprocessed: #Maid
             min: 2
             max: 4
       - !type:DoActsBehavior
@@ -294,7 +294,7 @@
           collection: GlassBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          UraniumOre1:
+          UraniumOre1Unprocessed: #Maid
             min: 1
             max: 3
       - !type:DoActsBehavior
@@ -329,7 +329,7 @@
           collection: GlassBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          BananiumOre1:
+          BananiumOre1Unprocessed: #Maid
             min: 1
             max: 3
       - !type:DoActsBehavior
@@ -383,7 +383,7 @@
           collection: GlassBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          SilverOre1:
+          SilverOre1Unprocessed: #Maid
             min: 1
             max: 3
       - !type:DoActsBehavior
@@ -412,7 +412,7 @@
           collection: GlassBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          GoldOre1:
+          GoldOre1Unprocessed: #Maid
             min: 1
             max: 3
       - !type:DoActsBehavior

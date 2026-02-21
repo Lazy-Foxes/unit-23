@@ -12,15 +12,15 @@
   - type: RandomChanceSpawner
     toSpawn:
       # materials
-      SteelOre1: 0.6
+      SteelOre1Unprocessed: 0.6 # Maid
       SheetSteel1: 0.5
       SheetSteel10: 0.05
       SheetPlasteel1: 0.4
       SheetPlasteel10: 0.04
       SheetUranium1: 0.03
-      GoldOre1: 0.04
+      GoldOre1Unprocessed: 0.04 # Maid
       IngotGold1: 0.01
-      SilverOre1: 0.04
+      SilverOre1Unprocessed: 0.04 # Maid
       IngotSilver1: 0.01
       # tools
       Crowbar: 0.15

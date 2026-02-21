@@ -370,7 +370,7 @@
           radius: 2
       repeating: true
     - type: Sprite
-      sprite: Objects/Weapons/pflash.rsi
+      sprite: _Maid/Objects/Weapons/pflash.rsi #Maid
       layers:
         - state: "off"
           map: ["enum.ProximityTriggerVisualLayers.Base"]

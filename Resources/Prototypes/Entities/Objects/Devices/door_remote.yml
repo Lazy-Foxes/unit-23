@@ -56,16 +56,16 @@
 - type: entity
   parent: [DoorRemoteDefault, BaseCommandContraband]
   id: DoorRemoteCustom
-  name: custom door remote
+  name: debug door remote
   description: A gadget which can open and bolt doors remotely. This advanced variant does not have built-in access, instead inheriting the ID access of the user.
   components:
   - type: Sprite
     layers:
     - state: door_remotebase
     - state: door_remotelightscolour
-      color: "#0077FF"
+      color: "#000000"
     - state: door_remotescreencolour
-      color: "#0033EE"
+      color: "#000000"
   - type: Access
   - type: DoorRemote
     includeUserAccess: true

@@ -219,9 +219,9 @@
   description: A suit of semi-flexible polycarbonate body armor with heavy padding to protect against melee attacks. Perfect for fighting delinquents around the station.
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Armor/riot.rsi
+    sprite: _Maid/Clothing/OuterClothing/Armor/riot.rsi #Maid
   - type: Clothing
-    sprite: Clothing/OuterClothing/Armor/riot.rsi
+    sprite: _Maid/Clothing/OuterClothing/Armor/riot.rsi #Maid
   - type: Armor
     coverage:
     - Chest
@@ -258,9 +258,9 @@
   description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
   components:
   - type: Sprite
-    sprite: _Maid/Clothing/OuterClothing/Armor/bulletproof.rsi
+    sprite: _Maid/Clothing/OuterClothing/Armor/bulletproof.rsi #Maid
   - type: Clothing
-    sprite: _Maid/Clothing/OuterClothing/Armor/bulletproof.rsi
+    sprite: _Maid/Clothing/OuterClothing/Armor/bulletproof.rsi #Maid
   - type: Armor
     coverage:
     - Chest

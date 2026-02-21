@@ -57,12 +57,14 @@ ent-IDComputerCircuitboard = консоль ID-карт (консольная п
     .desc = Консольная плата для консоли ID-карт.
 ent-BodyScannerComputerCircuitboard = консоль сканера тела (консольная плата)
     .desc = Консольная плата для консоли сканера тела.
-ent-CommsComputerCircuitboard = консоль связи (консольная плата)
-    .desc = Консольная плата для консоли связи.
-ent-SyndicateCommsComputerCircuitboard = консоль связи Синдиката (консольная плата)
-    .desc = Консольная плата для консоли связи Синдиката.
-ent-CentcommCommsComputerCircuitboard = консоль связи Центрального командования (консольная плата)
-    .desc = Консольная плата для консоли связи Центрального командования.
+# Maid
+ent-CommsComputerCircuitboard = коммуникационная консоль (консольная плата)
+    .desc = Консольная плата для коммуникационной консоли.
+ent-SyndicateCommsComputerCircuitboard = коммуникационная консоль Синдиката (консольная плата)
+    .desc = Консольная плата для коммуникационной консоли Синдиката.
+ent-CentcommCommsComputerCircuitboard = коммуникационная консоль Центрального командования (консольная плата)
+    .desc = Консольная плата для коммуникационной консоли Центрального командования.
+# MaidEnd
 ent-RadarConsoleCircuitboard = консоль сканера массы (консольная плата)
     .desc = { ent-BaseComputerCircuitboard.desc }
 ent-SolarControlComputerCircuitboard = консоль контроля солнечных батарей (консольная плата)

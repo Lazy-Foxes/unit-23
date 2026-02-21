@@ -64,7 +64,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 1
     baseSprintSpeed : 1
-  - type: Reflect 
+  - type: Reflect
     reflectProb: 1
     reflects:
     - Nonenergy
@@ -114,8 +114,8 @@
     damageContainer: ManifestedSpirit
     damageModifierSet: ManifestedSpirit
   - type: Megafauna
-    loot: DiamondOre1Unprocessed
-  
+    loot: DiamondOre1
+
 - type: entity
   name: glutton
   parent: [ SimpleSpaceMobBase, MobCombat ]

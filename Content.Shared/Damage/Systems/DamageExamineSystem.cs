@@ -91,13 +91,13 @@ public sealed class DamageExamineSystem : EntitySystem
             }
         }
 
-        // Goobstation Change
-        var meaningfulDamage = GetTotalMeaningfulDamage(damageSpecifier);
-        if (meaningfulDamage > 0)
-        {
-            msg.PushNewline();
-            msg.AddMarkupOrThrow(Loc.GetString("damage-hits-to-kill", ("count", (100f / (float) meaningfulDamage).ToString("F1"))));
-        }
+        // // Goobstation Change
+        // var meaningfulDamage = GetTotalMeaningfulDamage(damageSpecifier);
+        // if (meaningfulDamage > 0)
+        // {
+        //     msg.PushNewline();
+        //     msg.AddMarkupOrThrow(Loc.GetString("damage-hits-to-kill", ("count", (100f / (float) meaningfulDamage).ToString("F1"))));
+        // } #Maid
 
         return msg;
     }

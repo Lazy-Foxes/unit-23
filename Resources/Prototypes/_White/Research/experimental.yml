@@ -19,11 +19,11 @@
   discipline: Experimental
   tier: 2
   cost: 10000
-  position: -5,-1
+  position: -4,-1 #Maid
   recipeUnlocks:
   - ClothingEyesNightVisionGoggles
   technologyPrerequisites:
-  - ModsuitsTech
+  - MagnetsTech #Maid
 
 - type: technology
   id: ThermalVisionTech
@@ -34,8 +34,8 @@
   discipline: Experimental
   tier: 2
   cost: 10000
-  position: -6,-1
+  position: -5,-1 #Maid
   recipeUnlocks:
   - ClothingEyesThermalVisionGoggles
   technologyPrerequisites:
-  - ModsuitsTech
+  - MagnetsTech #Maid

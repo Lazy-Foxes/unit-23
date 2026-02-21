@@ -164,7 +164,7 @@
   - type: GameRule
     minPlayers: 30
   - type: LoadMapRule
-    mapPath: /Maps/_Goobstation/Nonstations/nukieplanet.yml
+    mapPath: /Maps/Nonstations/nukieplanet.yml #Maid
   - type: AntagSelection
     selectionTime: PrePlayerSpawn
     definitions:

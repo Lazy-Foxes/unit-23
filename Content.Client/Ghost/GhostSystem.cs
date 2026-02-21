@@ -241,14 +241,15 @@ namespace Content.Client.Ghost
             _console.RemoteExecuteCommand(null, "ghostroles");
         }
 
-        public void GhostBarSpawn() // Goobstation - Ghost Bar
-        {
-            RaiseNetworkEvent(new GhostBarSpawnEvent());
-        }
-
         public void ToggleGhostVisibility(bool? visibility = null)
         {
             GhostVisibility = visibility ?? !GhostVisibility;
+        }
+
+        public void ReturnToRound() // WD EDIT
+        {
+            var msg = new GhostReturnToRoundRequest();
+            RaiseNetworkEvent(msg);
         }
     }
 }

@@ -161,7 +161,7 @@
   - type: BodyEmotes # Grants them clapping and so on.
     soundsId: Scurret
   - type: Deathgasp
-    prototype: ScurretDeathgasp # You monster
+#    prototype: ScurretDeathgasp # You monster #Maid
   - type: Tag
     tags:
     - DoorBumpOpener

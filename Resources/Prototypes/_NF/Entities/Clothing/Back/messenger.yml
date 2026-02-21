@@ -395,44 +395,45 @@
   id: ClothingBackpackMessengerSecurity
   name: security messenger bag
   description: A robust bag for storing extra arrest equipment.
-  components:
+  components: #Maid edit start
   - type: Sprite
-    layers:
-    - state: icon-base
-      color: "#282828"
-    - state: icon-base-top
-      color: "#4c4b4f"
-    - state: icon-sling
-      color: "#88242d"
-    - state: icon-clasp
-      color: "#a52f29"
-  - type: Clothing
-    clothingVisuals:
-      back:
-      - state: base-equipped-BACKPACK
-        color: "#282828"
-      - state: base-top-equipped-BACKPACK
-        color: "#4c4b4f"
-      - state: sling-equipped-BACKPACK
-        color: "#88242d"
-      - state: clasp-equipped-BACKPACK
-        color: "#a52f29"
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: base-inhand-left
-        color: "#282828"
-      - state: base-top-inhand-left
-        color: "#4c4b4f"
-      - state: clasp-inhand-left
-        color: "#eca615"
-      right:
-      - state: base-inhand-right
-        color: "#282828"
-      - state: base-top-inhand-right
-        color: "#4c4b4f"
-      - state: clasp-inhand-right
-        color: "#eca615"
+#    layers:
+#    - state: icon-base
+#      color: "#282828"
+#    - state: icon-base-top
+#      color: "#4c4b4f"
+#    - state: icon-sling
+#      color: "#88242d"
+#    - state: icon-clasp
+#      color: "#a52f29"
+#  - type: Clothing
+#    clothingVisuals:
+#      back:
+#      - state: base-equipped-BACKPACK
+#        color: "#282828"
+#      - state: base-top-equipped-BACKPACK
+#        color: "#4c4b4f"
+#      - state: sling-equipped-BACKPACK
+#        color: "#88242d"
+#      - state: clasp-equipped-BACKPACK
+#        color: "#a52f29"
+#  - type: Item
+#    inhandVisuals:
+#      left:
+#      - state: base-inhand-left
+#        color: "#282828"
+#      - state: base-top-inhand-left
+#        color: "#4c4b4f"
+#      - state: clasp-inhand-left
+#        color: "#eca615"
+#      right:
+#      - state: base-inhand-right
+#        color: "#282828"
+#      - state: base-top-inhand-right
+#        color: "#4c4b4f"
+#      - state: clasp-inhand-right
+#        color: "#eca615" 
+    sprite: _Maid/Clothing/Back/Messenger/security.rsi #Maid edit end
 
 - type: entity
   parent: [ BaseSecurityContraband , ClothingBackpackMessengerBase ]

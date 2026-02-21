@@ -43,7 +43,7 @@
     - id: FoodMeat
       amount: 3
   - type: Deathgasp
-    prototype: MonkeyDeathgasp
+#    prototype: MonkeyDeathgasp #Maid
   - type: Physics 
     bodyType: Dynamic # Allows mob to be moved since BaseWeaponBallisticTurret sets entity to Static.
   - type: Transform 

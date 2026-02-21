@@ -628,8 +628,17 @@
     stateDoorClosed: clown_door
   - type: StorageFill #Goobstation - clowncar
     contents:
-    - id: VehicleClowncarTrainee
-    - id: ClownMegaphone # goob - loudspeakers
+#    - id: VehicleClowncarTrainee #Maid edit start
+#    - id: ClownMegaphone # goob - loudspeakers
+    - id: ClothingUniformJumpsuitClown
+    - id: ClothingUniformJumpskirtClown
+    - id: ClothingShoesClown
+    - id: BikeHorn
+    - id: RubberStampClown
+    - id: ClownRecorder
+    - id: FoodPieBananaCream
+      amount: 2
+    - id: ClothingMaskClown #Maid edit end
 
 # Mime
 - type: entity

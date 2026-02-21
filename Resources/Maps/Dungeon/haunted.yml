@@ -394,7 +394,7 @@ entities:
     - pos: 35.5,14.5
       parent: 1653
       type: Transform
-- proto: BananiumOre1
+- proto: BananiumOre1Unprocessed
   entities:
   - uid: 147
     components:
@@ -1748,7 +1748,7 @@ entities:
     - pos: 22.299234,34.608044
       parent: 1653
       type: Transform
-- proto: GoldOre1
+- proto: GoldOre1Unprocessed
   entities:
   - uid: 134
     components:
@@ -2078,7 +2078,7 @@ entities:
     - pos: 21.743324,22.05294
       parent: 1653
       type: Transform
-- proto: PlasmaOre1
+- proto: PlasmaOre1Unprocessed
   entities:
   - uid: 469
     components:
@@ -2337,7 +2337,7 @@ entities:
     - pos: 20.5,43.5
       parent: 1653
       type: Transform
-- proto: SilverOre1
+- proto: SilverOre1Unprocessed
   entities:
   - uid: 198
     components:
@@ -2403,7 +2403,7 @@ entities:
     - pos: 19.5,13.5
       parent: 1653
       type: Transform
-- proto: SteelOre
+- proto: SteelOreUnprocessed
   entities:
   - uid: 197
     components:
@@ -2514,14 +2514,14 @@ entities:
     - pos: 5.484687,26.403563
       parent: 1653
       type: Transform
-- proto: UraniumOre
+- proto: UraniumOreUnprocessed
   entities:
   - uid: 433
     components:
     - pos: 4.487873,46.58196
       parent: 1653
       type: Transform
-- proto: UraniumOre1
+- proto: UraniumOre1Unprocessed
   entities:
   - uid: 192
     components:

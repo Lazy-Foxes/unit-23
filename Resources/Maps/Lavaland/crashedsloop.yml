@@ -1249,7 +1249,7 @@ entities:
     - type: Transform
       pos: 4.5,-12.5
       parent: 1
-- proto: GoldOre1
+- proto: GoldOre1Unprocessed
   entities:
   - uid: 162
     components:

@@ -2886,14 +2886,14 @@ entities:
     - type: Transform
       pos: 36.5,26.5
       parent: 2
-- proto: GoldOre
+- proto: GoldOreUnprocessed
   entities:
   - uid: 937
     components:
     - type: Transform
       pos: 37.69189,4.4285326
       parent: 2
-- proto: GoldOre1
+- proto: GoldOre1Unprocessed
   entities:
   - uid: 959
     components:
@@ -4451,7 +4451,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 36.5,27.5
       parent: 2
-- proto: SilverOre1
+- proto: SilverOre1Unprocessed
   entities:
   - uid: 962
     components:

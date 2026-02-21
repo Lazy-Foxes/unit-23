@@ -75,28 +75,35 @@
     children:
     - id: HandheldHealthAnalyzer
       prob: 0.6
-    - id: ClothingHeadMirror
-      prob: 0.1
+    # - id: ClothingHeadMirror
+    #   prob: 0.1
     - id: ClothingHandsGlovesLatex
     - id: ClothingHeadsetMedical
     - id: ClothingEyesHudMedical
-    - !type:GroupSelector
-      children:
-      - id: ClothingHeadHatSurgcapGreen
-        weight: 0.1
-      - id: ClothingHeadHatSurgcapPurple
-        weight: 0.05
-      - id: ClothingHeadHatSurgcapBlue
-        weight: 0.90
-    - !type:GroupSelector
-      children:
-      - id: UniformScrubsColorBlue
-        weight: 0.5
-      - id: UniformScrubsColorGreen
-        weight: 0.1
-      - id: UniformScrubsColorPurple
-        weight: 0.05
+    - id: UniformScrubsColorBlue
+    - id: ClothingHeadHatSurgcapBlue
     - id: ClothingMaskSterile
+    - id: ClothingOuterCoatLab
+    - id: ClothingMaskBreathMedical
+    - id: ClothingBeltMedicalFilled
+
+    # - !type:GroupSelector
+    #   children:
+    #   - id: ClothingHeadHatSurgcapGreen
+    #     weight: 0.1
+    #   - id: ClothingHeadHatSurgcapPurple
+    #     weight: 0.05
+    #   - id: ClothingHeadHatSurgcapBlue
+    #     weight: 0.90
+    # - !type:GroupSelector
+    #   children:
+    #   - id: UniformScrubsColorBlue
+    #     weight: 0.5
+    #   - id: UniformScrubsColorGreen
+    #     weight: 0.1
+    #   - id: UniformScrubsColorPurple
+    #     weight: 0.05 # Maid
+
 
 - type: entity
   parent: LockerMedical
@@ -130,7 +137,9 @@
     - id: BoxPillCanister
     - id: BoxBottle
     - id: BoxVial
-    - id: PlasmaChemistryVial
+    # - id: PlasmaChemistryVial
+    - id: ClothingMaskBreathMedical
+    - id: ClothingOuterCoatLabChem
     - id: ChemBag
     - id: ClothingHandsGlovesLatex
     - id: ClothingHeadsetMedical
@@ -175,7 +184,10 @@
   components:
   - type: StorageFill
     contents:
-      - id: UndeterminedVoidsuitParamedic # Goob edit
+      # - id: UndeterminedVoidsuitParamedic # Goob edit
+      - id: ClothingMaskBreathMedical
+      - id: ClothingOuterHardsuitVoidParamed
+      - id: ClothingBeltMedicalEMTFilled
       - id: OxygenTankFilled
       - id: NitrogenTankFilled
       - id: ClothingOuterCoatParamedicWB

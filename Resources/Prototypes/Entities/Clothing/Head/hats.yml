@@ -180,7 +180,7 @@
     - CorgiWearable
     - ClothMade
     - Recyclable
-    - HamsterWearable
+
     - WhitelistChameleon
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
@@ -701,9 +701,9 @@
   description: A stylish cap worn by the Head of Personnel. Shows paperwork who's in charge.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hats/hopcap.rsi
+    sprite: _Maid/Clothing/Head/Hats/hopcap.rsi #Maid
   - type: Clothing
-    sprite: Clothing/Head/Hats/hopcap.rsi
+    sprite: _Maid/Clothing/Head/Hats/hopcap.rsi #Maid
   - type: Tag
     tags:
     - PetWearable
@@ -720,9 +720,9 @@
   description: A stylish cap worn by the Head of Security. Shows the officers who's in charge.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hats/hoshat.rsi
+    sprite: _Maid/Clothing/Head/Hats/hoshat.rsi #Maid
   - type: Clothing
-    sprite: Clothing/Head/Hats/hoshat.rsi
+    sprite: _Maid/Clothing/Head/Hats/hoshat.rsi #Maid
   - type: Tag
     tags:
     - PetWearable

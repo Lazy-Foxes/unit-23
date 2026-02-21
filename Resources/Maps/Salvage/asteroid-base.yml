@@ -1868,7 +1868,7 @@ entities:
     - type: Transform
       pos: 8.530472,8.534576
       parent: 407
-- proto: PlasmaOre1
+- proto: PlasmaOre1Unprocessed
   entities:
   - uid: 397
     components:

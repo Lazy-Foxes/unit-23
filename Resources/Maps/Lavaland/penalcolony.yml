@@ -5032,7 +5032,7 @@ entities:
     - type: Transform
       pos: -7.5,17.5
       parent: 1
-- proto: SteelOre1
+- proto: SteelOre1Unprocessed
   entities:
   - uid: 776
     components:

@@ -152,7 +152,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingModsuitAtmostechPowerCell # Goob edit
+      - id: ClothingOuterHardsuitAtmos #Maid edit
       - id: OxygenTankFilled
       - id: NitrogenTankFilled
       - id: ClothingMaskGasAtmos
@@ -165,9 +165,13 @@
       - id: DoorRemoteFirefight # Goobstation - re adding fire door remote
       - id: RCD
       - id: RCDAmmo
-      - id: AirGrenade
-      - id: ClothingHandsGlovesAtmosInsulated # Goobstation - insulated atmos gloves
-      - id: ClothingBackpackFirefighterTank # Assmos - Firefighter nozzle
+      - id: ClothingBeltUtilityEngineering #Maid edit start
+      - id: ClothingEyesGlassesMeson
+      - id: ClothingShoesBootsMag
+      - id: ClothingHandsGlovesColorYellow
+#      - id: AirGrenade
+#      - id: ClothingHandsGlovesAtmosInsulated # Goobstation - insulated atmos gloves
+#      - id: ClothingBackpackFirefighterTank # Assmos - Firefighter nozzle #Maid edit end
 
 - type: entity
   id: LockerAtmosphericsFilled
@@ -186,9 +190,13 @@
       - id: DoorRemoteFirefight # Goobstation - re adding fire door remote
       - id: RCD
       - id: RCDAmmo
-      - id: ClothingHandsGlovesAtmosInsulated # Goobstation - insulated atmos gloves
-      - id: ClothingBackpackFirefighterTank # Assmos - Firefighter nozzle
-      - id: AirGrenade
+      - id: ClothingBeltUtilityEngineering #Maid edit start
+      - id: ClothingEyesGlassesMeson
+      - id: ClothingShoesBootsMag
+      - id: ClothingHandsGlovesColorYellow
+#      - id: AirGrenade
+#      - id: ClothingHandsGlovesAtmosInsulated # Goobstation - insulated atmos gloves
+#      - id: ClothingBackpackFirefighterTank # Assmos - Firefighter nozzle #Maid edit end
 
 - type: entity
   id: LockerEngineerFilledHardsuit
@@ -197,15 +205,19 @@
   components:
   - type: StorageFill
     contents:
-      - id: UndeterminedVoidsuitEngineer # Goob edit
+      - id: ClothingOuterHardsuitEngineering #Maid edit
       - id: OxygenTankFilled
       - id: NitrogenTankFilled
       - id: ClothingHandsGlovesColorYellow
       - id: ClothingMaskGas
       - id: ClothingShoesBootsMag
-      - id: RCD
-      - id: RCDAmmo
-      - id: MetalFoamGrenade
+      - id: ClothingBeltUtilityEngineering #Maid edit start
+      - id: ClothingEyesGlassesMeson
+#      - id: RCD
+#      - id: RCDAmmo
+#      - id: ClothingBeltUtilityEngineering
+#      - id: ClothingEyesGlassesMeson
+#      - id: MetalFoamGrenade #Maid edit end
 
 - type: entity
   id: LockerEngineerFilled
@@ -217,9 +229,14 @@
       - id: ClothingHandsGlovesColorYellow
       - id: ClothingMaskGas
       - id: trayScanner
-      - id: RCD
-      - id: RCDAmmo
-      - id: MetalFoamGrenade
+      - id: ClothingBeltUtilityEngineering #Maid edit start
+      - id: ClothingEyesGlassesMeson
+#      - id: RCD
+#      - id: RCDAmmo
+#      - id: ClothingBeltUtilityEngineering
+#      - id: ClothingEyesGlassesMeson
+#      - id: MetalFoamGrenade #Maid edit end
+
 
 - type: entity
   id: ClosetRadiationSuitFilled

@@ -154,6 +154,7 @@
   name: tts-voice-name-sentrybot
   sex: Male
   speaker: sentrybot
+  roundStart: false
 
 - type: ttsVoice
   id: MoiraBrown
@@ -904,36 +905,42 @@
   name: tts-voice-name-alchemist
   sex: Male
   speaker: alchemist_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: BatriderDota2
   name: tts-voice-name-batrider
   sex: Male
   speaker: batrider_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: BloodseekerDota2
   name: tts-voice-name-bloodseeker
   sex: Male
   speaker: bloodseeker_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: BountyHunterDota2
   name: tts-voice-name-bounty-hunter
   sex: Male
   speaker: bounty_hunter_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: BristlebackDota2
   name: tts-voice-name-bristleback
   sex: Male
   speaker: bristleback_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: BroodmotherDota2
   name: tts-voice-name-broodmother
   sex: Female
   speaker: broodmother_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: CentaurWarrunnerDota2
@@ -946,12 +953,14 @@
   name: tts-voice-name-crystal-maiden
   sex: Female
   speaker: crystal_maiden_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: DisruptorDota2
   name: tts-voice-name-disruptor
   sex: Male
   speaker: disruptor_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: DoomDota2
@@ -964,6 +973,7 @@
   name: tts-voice-name-drow-ranger
   sex: Female
   speaker: drow_ranger_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: HuskarDota2
@@ -976,6 +986,7 @@
   name: tts-voice-name-juggernaut
   sex: Male
   speaker: juggernaut_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: KeeperOfTheLightDota2
@@ -994,12 +1005,14 @@
   name: tts-voice-name-legion-commander-demon
   sex: Female
   speaker: legion_commander_demon_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: LegionCommanderDota2
   name: tts-voice-name-legion-commander
   sex: Female
   speaker: legion_commander_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: LinaDota2
@@ -1024,18 +1037,21 @@
   name: tts-voice-name-mirana
   sex: Female
   speaker: mirana_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: PhantomAssassinArcanaDota2
   name: tts-voice-name-phantom-assassin-arcana
   sex: Female
   speaker: phantom_assassin_arcana_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: PhantomAssassinDota2
   name: tts-voice-name-phantom-assassin
   sex: Female
   speaker: phantom_assassin_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: PhantomLancerDota2
@@ -1078,6 +1094,7 @@
   name: tts-voice-name-spirit-breaker
   sex: Male
   speaker: spirit_breaker_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: StormSpiritDota2
@@ -1126,12 +1143,14 @@
   name: tts-voice-name-winter-wyvern
   sex: Female
   speaker: winter_wyvern_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: WraithKingDota2
   name: tts-voice-name-wraith-king
   sex: Male
   speaker: wraith_king_dota_2
+  roundStart: false
 
 - type: ttsVoice
   id: Mita
@@ -1150,6 +1169,7 @@
   name: tts-voice-name-mitaghost
   sex: Female
   speaker: mitaghost
+  roundStart: false
 
 - type: ttsVoice
   id: Mitakind

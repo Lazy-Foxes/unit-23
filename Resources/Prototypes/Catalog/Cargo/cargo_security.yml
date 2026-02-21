@@ -28,7 +28,7 @@
 - type: cargoProduct
   id: SecurityArmor
   icon:
-    sprite: Clothing/OuterClothing/Armor/bulletproof.rsi
+    sprite: _Maid/Clothing/OuterClothing/Armor/bulletproof.rsi #Maid
     state: icon
   product: CrateSecurityArmor
   cost: 1000 # Goobstation - less of a nerf
@@ -38,7 +38,7 @@
 - type: cargoProduct
   id: SecurityHelmet
   icon:
-    sprite: Clothing/Head/Helmets/security.rsi
+    sprite: _Maid/Clothing/Head/Helmets/security.rsi #Maid
     state: icon
   product: CrateSecurityHelmet
   cost: 550
@@ -49,7 +49,7 @@
   id: SecurityNonLethal
   icon:
     sprite: Objects/Weapons/Guns/Battery/disabler.rsi
-    state: base
+    state: icon
   product: CrateSecurityNonlethal
   cost: 4000
   category: cargoproduct-category-name-security
@@ -105,12 +105,12 @@
   category: cargoproduct-category-name-security
   group: market
 
-- type: cargoProduct
-  id: SecurityGenPopCloset
-  icon:
-    sprite: _Maid/Structures/Storage/closet.rsi # Maid
-    state: generic # Maid
-  product: LockerPrisoner
-  cost: 250
-  category: cargoproduct-category-name-security
-  group: market
+#- type: cargoProduct #Maid edit start
+#  id: SecurityGenPopCloset
+#  icon:
+#    sprite: _Maid/Structures/Storage/closet.rsi # Maid
+#    state: generic # Maid
+#  product: LockerPrisoner
+#  cost: 250
+#  category: cargoproduct-category-name-security
+#  group: market #Maid edit end

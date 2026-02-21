@@ -18,10 +18,12 @@ ent-BaseBulletUranium = базовая пуля урановая
     .desc = { ent-BaseBullet.desc }
 ent-BulletTaser = заряд тазера
     .desc = { ent-BaseBullet.desc }
-ent-BulletDisabler = заряд станнера
+# Maid
+ent-BulletDisabler = заряд дизейблера 
     .desc = { ent-BaseBullet.desc }
-ent-BulletDisablerPractice = заряд тренировочного станнера
+ent-BulletDisablerPractice = заряд тренировочного дизейблера 
     .desc = { ent-BaseBullet.desc }
+# MaidEnd
 ent-EmitterBolt = заряд эмиттера
     .desc = { ent-BaseBullet.desc }
 ent-WatcherBolt = заряд наблюдателя
@@ -86,14 +88,18 @@ ent-BulletCannonBall = пушечное ядро
     .desc = { ent-BaseBulletTrigger.desc }
 ent-GrapplingHook = якорь
     .desc = { "" }
-ent-BulletDisablerSmg = заряд станнера-пулемёта
+# Maid
+ent-BulletDisablerSmg = заряд дизейблера-пулемёта
     .desc = { ent-BaseBullet.desc }
+# MaidEnd
 ent-BulletEnergyTurretBase = энергетический заряд
     .desc = { ent-BaseBullet.desc }
 ent-BulletEnergyTurretLaser = лазерный заряд
     .desc = { ent-BulletEnergyTurretBase.desc }
-ent-BulletEnergyTurretDisabler = заряд станнера
+# Maid
+ent-BulletEnergyTurretDisabler = заряд дизейблера
     .desc = { ent-BulletEnergyTurretBase.desc }
+# MaidEnd
 ent-TeslaGunBullet = молния Тесла-пушки
     .desc = { ent-BaseBullet.desc }
 ent-BulletLaser = лазерный заряд

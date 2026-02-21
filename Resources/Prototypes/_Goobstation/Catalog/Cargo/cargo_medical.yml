@@ -8,12 +8,12 @@
   category: cargoproduct-category-name-medical
   group: market
 
-- type: cargoProduct
-  id: MedicalFormaldehyde
-  icon:
-    sprite: Structures/Storage/morgue.rsi
-    state: morgue_closed
-  product: CrateMorgue
-  cost: 2500
-  category: cargoproduct-category-name-medical
-  group: market
+#- type: cargoProduct #Maid edit start
+#  id: MedicalFormaldehyde
+#  icon:
+#    sprite: Structures/Storage/morgue.rsi
+#    state: morgue_closed
+#  product: CrateMorgue
+#  cost: 2500
+#  category: cargoproduct-category-name-medical
+#  group: market #Maid edit end

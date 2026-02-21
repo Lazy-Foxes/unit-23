@@ -78,9 +78,9 @@
   suffix: Alt
   components:
   - type: Sprite
-    sprite: _Goobstation/Clothing/Head/Helmets/security.rsi
+    sprite: _Maid/Clothing/Head/Helmets/security.rsi #Maid
   - type: Clothing
-    sprite: _Goobstation/Clothing/Head/Helmets/security.rsi
+    sprite: _Maid/Clothing/Head/Helmets/security.rsi #Maid
   - type: Tag
     tags:
     - WhitelistChameleon

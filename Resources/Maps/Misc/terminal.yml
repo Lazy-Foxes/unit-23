@@ -1611,7 +1611,7 @@ entities:
     - Anchorable
     - Construction
     - Destructible
-- proto: BookshelfFilled
+- proto: BookshelfBrightFilled
   entities:
   - uid: 442
     components:
@@ -8329,7 +8329,7 @@ entities:
     missingComponents:
     - Destructible
     - Construction
-- proto: TableWood
+- proto: TableWoodBright
   entities:
   - uid: 441
     components:

@@ -46,9 +46,9 @@
   description: Pieces of metal that make the frame of a table.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/frame.rsi
+    sprite: _Maid/Structures/Furniture/Tables/frame.rsi #Maid
   - type: Icon
-    sprite: Structures/Furniture/Tables/frame.rsi
+    sprite: _Maid/Structures/Furniture/Tables/frame.rsi #Maid
     state: full
   - type: Fixtures
     fixtures:
@@ -103,9 +103,9 @@
   components:
   - type: SpriteFade
   - type: Sprite
-    sprite: Structures/Furniture/Tables/frame.rsi
+    sprite: _Maid/Structures/Furniture/Tables/frame.rsi #Maid
   - type: Icon
-    sprite: Structures/Furniture/Tables/frame.rsi
+    sprite: _Maid/Structures/Furniture/Tables/frame.rsi #Maid
     state: full
   - type: Fixtures
     fixtures:
@@ -160,9 +160,9 @@
   description: Pieces of metal that make the frame of a table.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/frame.rsi
+    sprite: _Maid/Structures/Furniture/Tables/frame.rsi #Maid
   - type: Icon
-    sprite: Structures/Furniture/Tables/frame.rsi
+    sprite: _Maid/Structures/Furniture/Tables/frame.rsi #Maid
     state: full
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -416,9 +416,9 @@
   description: A square piece of plasma glass, standing on four metal legs. Pretty!
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/plasma.rsi
+    sprite: _Maid/Structures/Furniture/Tables/plasma.rsi #Maid
   - type: Icon
-    sprite: Structures/Furniture/Tables/plasma.rsi
+    sprite: _Maid/Structures/Furniture/Tables/plasma.rsi #Maid
   - type: GlassTable
     climberDamage:
       types:
@@ -588,9 +588,9 @@
   description: Play em' cowboy.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/carpet.rsi
+    sprite: _Maid/Structures/Furniture/Tables/carpet.rsi #Maid
   - type: Icon
-    sprite: Structures/Furniture/Tables/carpet.rsi
+    sprite: _Maid/Structures/Furniture/Tables/carpet.rsi #Maid
   - type: Damageable
     damageModifierSet: Wood
   - type: Destructible

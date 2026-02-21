@@ -320,6 +320,7 @@
   parent: RollingOfficeChairBase # Goobstation - make the rolly chairs roll!
   components:
   - type: Sprite
+    sprite: _Maid/Structures/Furniture/chairs.rsi #Maid
     state: office-white
   - type: Construction
     graph: Seat
@@ -331,6 +332,7 @@
   parent: ChairOfficeLight
   components:
   - type: Sprite
+    sprite: _Maid/Structures/Furniture/chairs.rsi #Maid
     state: office-dark
   - type: Construction
     graph: Seat
@@ -370,6 +372,7 @@
   parent: UnanchoredChairBase
   components:
   - type: Sprite
+    sprite: _Maid/Structures/Furniture/chairs.rsi #Maid
     state: wooden
   - type: Construction
     graph: Seat
@@ -415,6 +418,7 @@
   description: Looks uncomfortable.
   components:
   - type: Sprite
+    sprite: Structures/Furniture/chairs.rsi #Maid
     state: ritual
   - type: Construction
     graph: RitualSeat
@@ -439,6 +443,7 @@
   description: It's staring back.
   components:
   - type: Sprite
+    sprite: Structures/Furniture/chairs.rsi #Maid
     state: cursed
   - type: Strap
     buckleSound:

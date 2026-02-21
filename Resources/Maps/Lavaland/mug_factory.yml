@@ -1281,7 +1281,7 @@ entities:
     - type: Transform
       pos: 3.3132744,-1.5471935
       parent: 1
-- proto: SteelOre1
+- proto: SteelOre1Unprocessed
   entities:
   - uid: 118
     components:

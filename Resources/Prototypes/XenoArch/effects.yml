@@ -749,19 +749,19 @@
       deleteSpawnerAfterSpawn: false
       table: !type:AllSelector
         children:
-        - id: SilverOre1
+        - id: SilverOre1Unprocessed # Maid
           rolls: !type:ConstantNumberSelector
             value: 6
           prob: 0.3
-        - id: PlasmaOre1
+        - id: PlasmaOre1Unprocessed # Maid
           rolls: !type:ConstantNumberSelector
             value: 6
           prob: 0.3
-        - id: GoldOre1
+        - id: GoldOre1Unprocessed # Maid
           rolls: !type:ConstantNumberSelector
             value: 6
           prob: 0.3
-        - id: UraniumOre1
+        - id: UraniumOre1Unprocessed # Maid
           rolls: !type:ConstantNumberSelector
             value: 6
           prob: 0.3
@@ -807,7 +807,7 @@
       deleteSpawnerAfterSpawn: false
       table: !type:AllSelector
         children:
-        - id: PlasmaOre1
+        - id: PlasmaOre1Unprocessed # Maid
           rolls: !type:ConstantNumberSelector
             value: 6
           prob: 0.3
@@ -830,7 +830,7 @@
       deleteSpawnerAfterSpawn: false
       table: !type:AllSelector
         children:
-        - id: GoldOre1
+        - id: GoldOre1Unprocessed # Maid
           rolls: !type:ConstantNumberSelector
             value: 6
           prob: 0.3
@@ -853,7 +853,7 @@
       deleteSpawnerAfterSpawn: false
       table: !type:AllSelector
         children:
-        - id: UraniumOre1
+        - id: UraniumOre1Unprocessed # Maid
           rolls: !type:ConstantNumberSelector
             value: 3
           prob: 0.3

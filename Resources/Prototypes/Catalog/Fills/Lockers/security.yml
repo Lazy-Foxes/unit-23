@@ -105,31 +105,33 @@
   table: !type:AllSelector
     children:
     - id: FlashlightSeclite
-    #- id: WeaponDisabler # Goobstation (Disablers in belts)
+    - id: WeaponDisabler # Goobstation (Disablers in belts)
     - id: ClothingBeltSecurityFilled
     - id: Flash
     - id: ClothingEyesGlassesSecurity
     - id: ClothingHandsGlovesCombat
     - id: ClothingShoesBootsJack
     - id: ClothingOuterCoatWarden
-    - id: ClothingOuterWinterWarden
+    # - id: ClothingOuterWinterWarden
     - id: RubberStampWarden
     - id: DoorRemoteArmory
     - id: HoloprojectorSecurity
     - id: BookSpaceLaw
-    - id: ClothingBackpackElectropack
-      amount: 2
-    - id: RemoteSignaller
-      amount: 2
+    - id: MagazinePistol 
+    - id: WeaponPistolMk58
+    # - id: ClothingBackpackElectropack
+    #   amount: 2
+    # - id: RemoteSignaller
+    #   amount: 2
 #   - id: Binoculars
 #   - id: WeaponEnergyShotgun # Goobstation
     - id: ClothingHandsGlovesKravMaga # Goobstation - Martial Arts
-    - id: BoxLethalInjection # Goobstation
+    # - id: BoxLethalInjection # Goobstation
     - id: ClothingHeadsetAltWarden # Goobstation
-    - id: Multitool # Goobstation
-    - id: Wrench # Goobstation
+    # - id: Multitool # Goobstation
+    # - id: Wrench # Goobstation
 #    - id: ContrabandDetectorFlatpack # Goobstation
-    - id: SecurityMegaphone # goob - loudspeakers
+    # - id: SecurityMegaphone # goob - loudspeakers
 #    - id: SecondSkinSecurity # Goobstation
 
 - type: entityTable
@@ -159,16 +161,18 @@
     #- id: WeaponDisabler # Goobstation (Disablers in belts)
     - id: ClothingUniformJumpsuitSecGrey
       prob: 0.3
-    - id: ClothingHeadHelmetBasic
+    - id: ClothingHeadHelmetBasicAlt
     - id: ClothingOuterArmorBasic
     - id: ClothingBeltSecurityFilled
     - id: Flash
       prob: 0.5
     - id: ClothingEyesGlassesSecurity
-    - id: ClothingHeadsetSecurity
+    # - id: ClothingHeadsetSecurity
     - id: ClothingHandsGlovesColorBlack
     - id: ClothingShoesBootsJack
-    - id: ClothingBeltSecurityFilled
+    - id: WeaponPistolMk58
+    - id: WeaponDisabler
+    - id: MagazinePistol
     - id: WeaponMeleeNeedle
       prob: 0.1
     - id: HoloprojectorSecurity
@@ -176,8 +180,8 @@
     - id: BookSpaceLaw
       prob: 0.5
     - id: ClothingHeadsetAltSecurityRegular # Goobstation
-    - id: PanicButton # Goobstation
-    - id: PepperSpray # Goobstation
+    # - id: PanicButton # Goobstation
+    # - id: PepperSpray # Goobstation
 #    - id: SecondSkinSecurity # Goobstation
     # Goobstation - Martial Arts - start #Maid edit
     #- !type:GroupSelector
@@ -230,11 +234,15 @@
   id: FillLockerDetective
   table: !type:AllSelector
     children:
-    - id: ClothingEyesGlassesNoir
-    - id: ClothingHeadHatDetGadget
+    # - id: ClothingEyesGlassesNoir
+    - id: ClothingHeadHatFedoraBrown
+    - id: ClothingEyesGlassesSunglasses
     - id: ClothingNeckTieDet
     - id: ClothingOuterVestDetective
     - id: ClothingOuterCoatDetectiveLoadout
+    - id: WeaponRevolverInspector
+    - id: SpeedLoaderMagnum
+      amount: 2
     - id: FlippoEngravedLighter
     - id: FlashlightSeclite
     - id: ForensicScanner
@@ -246,7 +254,7 @@
     - id: HoloprojectorSecurity
     - id: BoxEvidenceMarkers
     - id: HandLabeler
-    - id: BloodTrak # Goobstation
+    # - id: BloodTrak # Goobstation
     #      - id: Betty # Goobstation # Maid - ne rabotaet huinya
     - id: BoxTapeRecorder # DeltaV
 #    - id: SecondSkinSecurity # Goobstation

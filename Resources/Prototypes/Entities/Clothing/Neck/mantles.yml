@@ -74,9 +74,9 @@
   description: For when long days in the office consist of explosives, poisonous gas, murder robots, and a fresh pizza from cargo; this mantle will keep you comfy.
   components:
   - type: Sprite
-    sprite: Clothing/Neck/mantles/rdmantle.rsi
+    sprite: _Maid/Clothing/Neck/mantles/rdmantle.rsi #Maid
   - type: Clothing
-    sprite: Clothing/Neck/mantles/rdmantle.rsi
+    sprite: _Maid/Clothing/Neck/mantles/rdmantle.rsi #Maid
 
 - type: entity
   parent: [ClothingNeckBase, BaseCommandContraband]

@@ -272,7 +272,7 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
-- proto: BananiumOre
+- proto: BananiumOreUnprocessed
   entities:
   - uid: 768
     components:
@@ -638,7 +638,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: GoldOre
+- proto: GoldOreUnprocessed
   entities:
   - uid: 752
     components:
@@ -1133,7 +1133,7 @@ entities:
     - type: Transform
       pos: -22.5,0.5
       parent: 1
-- proto: SteelOre
+- proto: SteelOreUnprocessed
   entities:
   - uid: 767
     components:

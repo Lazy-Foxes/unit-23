@@ -464,6 +464,6 @@
     - Energy
   - type: Butcherable
     spawned:
-    - id: DiamondOre1
+    - id: DiamondOre1Unprocessed #Maid
       amount: 1
       maxAmount: 3

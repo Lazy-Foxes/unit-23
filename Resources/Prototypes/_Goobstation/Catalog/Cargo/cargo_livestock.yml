@@ -4,12 +4,12 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-- type: cargoProduct
-  id: LivestockLootbug
-  icon:
-    sprite: _Goobstation/Mobs/Animals/lootbug.rsi
-    state: icon
-  product: CrateNPCLootbug
-  cost: 5000
-  category: cargoproduct-category-name-livestock
-  group: market
+#- type: cargoProduct #Maid edit start
+#  id: LivestockLootbug
+#  icon:
+#    sprite: _Goobstation/Mobs/Animals/lootbug.rsi
+#    state: icon
+#  product: CrateNPCLootbug
+#  cost: 5000
+#  category: cargoproduct-category-name-livestock
+#  group: market #Maid edit end

@@ -36,7 +36,7 @@
     - VendingMachineDrGibb
     - VendingMachinePwrGame
     - VendingMachineShamblersJuice
-    - VendingMachineSmite
+#    - VendingMachineSmite #Maid
     - VendingMachineSnack
     - VendingMachineSnackBlue
     - VendingMachineSnackGreen
@@ -46,7 +46,7 @@
     - VendingMachineSovietSoda #Boda
     - VendingMachineSpaceUp
     - VendingMachineStarkist
-    - VendingMachineSweetToof # Goobstation
+#    - VendingMachineSweetToof # Goobstation #Maid
     chance: 1
 
 

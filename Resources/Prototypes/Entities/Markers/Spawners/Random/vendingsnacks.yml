@@ -31,5 +31,5 @@
       - VendingMachineSnackTeal
       - VendingMachineChang
       - VendingMachineDonut
-      - VendingMachineSweetToof # Goobstation
+#      - VendingMachineSweetToof # Goobstation #Maid
     chance: 1

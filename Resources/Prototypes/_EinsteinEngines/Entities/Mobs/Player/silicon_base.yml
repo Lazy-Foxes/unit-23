@@ -95,7 +95,7 @@
       atmosTemperatureTransferEfficiency: 0.05
     - type: KillOnOverheat # Goob edit
     - type: Deathgasp
-      prototype: SiliconDeathgasp
+#      prototype: SiliconDeathgasp #Maid
       needsCritical: false
     - type: MobState
       allowedStates:

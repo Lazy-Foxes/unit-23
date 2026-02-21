@@ -658,7 +658,7 @@
 
 - type: stack
   id: FloorTileWoodPattern
-  name: stack-wood-patter-floor
+  name: stack-wood-pattern-floor
   spawn: FloorTileItemWoodPattern
   maxCount: 30
 

@@ -102,7 +102,7 @@ tilemap:
   91: FloorSteel
   106: FloorTechMaint
   110: FloorWhite
-  120: FloorWood
+  120: FloorWoodBright
   123: Lattice
   124: Plating
 entities:
@@ -6719,7 +6719,7 @@ entities:
     - type: Transform
       pos: 13.500806,-4.4874377
       parent: 104
-- proto: Bookshelf
+- proto: BookshelfBright
   entities:
   - uid: 140
     components:
@@ -10455,7 +10455,7 @@ entities:
     - type: Transform
       pos: -0.5,-11.5
       parent: 104
-- proto: DresserFilled
+- proto: DresserBrightFilled
   entities:
   - uid: 349
     components:
@@ -13587,7 +13587,7 @@ entities:
     - type: Transform
       pos: 3.5,-12.5
       parent: 104
-- proto: TableWood
+- proto: TableWoodBright
   entities:
   - uid: 8
     components:

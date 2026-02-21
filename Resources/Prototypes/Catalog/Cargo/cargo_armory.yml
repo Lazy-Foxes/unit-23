@@ -47,7 +47,7 @@
 - type: cargoProduct
   id: SecurityRiot
   icon:
-    sprite: Clothing/OuterClothing/Armor/riot.rsi
+    sprite: _Maid/Clothing/OuterClothing/Armor/riot.rsi #Maid
     state: icon
   product: CrateSecurityRiot
   cost: 7500
@@ -97,7 +97,7 @@
 - type: cargoProduct
   id: ArmoryRifle
   icon:
-    sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
+    sprite: _Maid/Objects/Weapons/Guns/Rifles/lecter.rsi #Maid
     state: icon
   product: CrateArmoryRifle
   cost: 8000

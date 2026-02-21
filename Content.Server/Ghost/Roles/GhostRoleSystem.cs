@@ -170,7 +170,7 @@ public sealed class GhostRoleSystem : EntitySystem
     public void OpenEui(ICommonSession session)
     {
         if (session.AttachedEntity is not { Valid: true } attached ||
-            !TryComp<GhostComponent>(attached, out var ghost) || !ghost.CanTakeGhostRoles) // Goob edit
+            !TryComp<GhostComponent>(attached, out var ghost)) // Goob edit
             return;
 
         if (_openUis.ContainsKey(session))
@@ -501,10 +501,6 @@ public sealed class GhostRoleSystem : EntitySystem
     /// <param name="identifier">ID of the ghost role.</param>
     public void Request(ICommonSession player, uint identifier)
     {
-        if (player.AttachedEntity is not { Valid: true } attached ||
-            !EntityManager.TryGetComponent<GhostComponent>(attached, out var ghost) || !ghost.CanTakeGhostRoles) // Goobstation
-            return;
-
         if (!_ghostRoles.TryGetValue(identifier, out var roleEnt))
             return;
 

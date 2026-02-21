@@ -37,8 +37,8 @@
       - id: FoodPacketSemkiTrash
       - id: FoodPacketSusTrash
       - id: FoodPacketSyndiTrash
-      - id: FoodSnackLollypopTrash # Goobstation - Lollypops
-      - id: FoodPacketLollypopTrash # Goobstation - Lollypops
+#      - id: FoodSnackLollypopTrash # Goobstation - Lollypops #Maid
+#      - id: FoodPacketLollypopTrash # Goobstation - Lollypops #Maid
       - id: BrokenBottle
     - !type:GroupSelector
       weight: 5

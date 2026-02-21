@@ -663,7 +663,7 @@
     - id: WeaponProtoKineticAccelerator
       whitelist:
         components:
-        - PressureDamageChange
+        - UpgradeableGun #Maid
   # Goob end
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: adv-mining-module }

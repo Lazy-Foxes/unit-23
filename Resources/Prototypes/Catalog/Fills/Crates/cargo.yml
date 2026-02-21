@@ -304,7 +304,7 @@
     - id: IngotGold
       prob: 0.001
       orGroup: Swag
-    - id: GoldOre1
+    - id: GoldOre1Unprocessed # Maid
       prob: 0.01
       orGroup: Swag
     - id: GoldOre
