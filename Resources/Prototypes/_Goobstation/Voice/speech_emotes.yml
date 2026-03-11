@@ -34,7 +34,7 @@
 - type: emote
   id: Trill
   name: chat-emote-name-trill
-  category: Vocal
+  category: Invalid
   available: false
   icon: _Goobstation/Interface/Emotes/caw.png
   whitelist:
@@ -53,7 +53,7 @@
 - type: emote
   id: Warble
   name: chat-emote-name-warble
-  category: Vocal
+  category: Invalid #Maid edit
   available: false
   icon: _Goobstation/Interface/Emotes/caw.png
   whitelist:
@@ -126,17 +126,18 @@
     - gulps
     - gulp
 
-- type: emote
-  id: Surprised
-  name: chat-emote-name-surprised
-  category: Vocal
-  icon: _Goobstation/Interface/Emotes/surprised.png
-  whitelist:
-    components:
-    - Vocal
-  chatMessages: ["chat-emote-msg-surprised"]
-  chatTriggers:
-    - looks surprised
-    - is surprised
-    - exclamation marks
-    - exclamation mark
+# Maid edit
+#- type: emote
+#  id: Surprised
+#  name: chat-emote-name-surprised
+#  category: Vocal
+#  icon: _Goobstation/Interface/Emotes/surprised.png
+#  whitelist:
+#    components:
+#    - Vocal
+#  chatMessages: ["chat-emote-msg-surprised"]
+#  chatTriggers:
+#    - looks surprised
+#    - is surprised
+#    - exclamation marks
+#    - exclamation mark
