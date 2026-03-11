@@ -5,7 +5,7 @@
     VerticalExpand="True"
     HorizontalExpand="True"
     MinHeight="150"
-    MinWidth="450">
+    MinWidth="500">
     <GridContainer Name="EmotionsContainer" Access="Public" Columns="3">
 
     </GridContainer>
