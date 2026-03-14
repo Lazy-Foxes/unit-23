@@ -165,7 +165,6 @@ using Content.Client.Sprite;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared._Maid.CVars;
-using Content.Shared._White.Humanoid.Prototypes;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
@@ -252,8 +251,6 @@ namespace Content.Client.Lobby.UI
         public HumanoidCharacterProfile? Profile;
 
         private List<SpeciesPrototype> _species = new();
-
-        private List<BodyTypePrototype> _bodyTypes = new(); // WD EDIT
 
         private List<(string, RequirementsSelector)> _jobPriorities = new();
 
@@ -364,17 +361,6 @@ namespace Content.Client.Lobby.UI
 
             #endregion
             //Maid edit end
-
-            #region BodyType
-
-            CBodyTypesButton.OnItemSelected += args =>
-            {
-                CBodyTypesButton.SelectId(args.Id);
-                SetBodyType(_bodyTypes[args.Id].ID);
-            };
-
-            #endregion
-            // WD EDIT END
 
             #region Age
 
@@ -985,7 +971,6 @@ namespace Content.Client.Lobby.UI
             UpdateFlavorTextEdit();
             UpdateSexControls();
             UpdateTTSVoicesControls(); //Maid edit
-            UpdateBodyTypes(); // WD EDIT
             UpdateGenderControls();
             UpdateSkinColor();
             UpdateSpawnPriorityControls();
@@ -1462,7 +1447,6 @@ namespace Content.Client.Lobby.UI
             UpdateGenderControls();
             Markings.SetSex(newSex);
             UpdateTTSVoicesControls(); //Maid edit
-            UpdateBodyTypes(); // WD EDIT
             ReloadPreview();
         }
 
@@ -1473,14 +1457,6 @@ namespace Content.Client.Lobby.UI
             IsDirty = true;
         }
         //Maid edit end
-
-        private void SetBodyType(string newBodyType)
-        {
-            Profile = Profile?.WithBodyType(newBodyType);
-            ReloadPreview();
-            IsDirty = true;
-        }
-        // WD EDIT END
 
         private void SetGender(Gender newGender)
         {
@@ -1499,7 +1475,6 @@ namespace Content.Client.Lobby.UI
             RefreshLoadouts();
             UpdateSexControls(); // update sex for new species
             UpdateSpeciesGuidebookIcon();
-            UpdateBodyTypes(); // WD EDIT
             ReloadPreview();
             // begin Goobstation: port EE height/width sliders
             // Changing species provides inaccurate sliders without these
@@ -1616,34 +1591,6 @@ namespace Content.Client.Lobby.UI
         {
             AgeEdit.Text = Profile?.Age.ToString() ?? "";
         }
-
-        // WD EDIT START
-        private void UpdateBodyTypes()
-        {
-            if (Profile is null)
-                return;
-
-            CBodyTypesButton.Clear();
-            var species = _prototypeManager.Index<SpeciesPrototype>(Profile.Species);
-            var sex = Profile.Sex;
-            _bodyTypes = species.BodyTypes.Select(protoId => _prototypeManager.Index<BodyTypePrototype>(protoId))
-                .Where(proto => !proto.SexRestrictions.Contains(sex.ToString()))
-                .ToList();
-
-            for (var i = 0; i < _bodyTypes.Count; i++)
-                CBodyTypesButton.AddItem(Loc.GetString(_bodyTypes[i].Name), i);
-
-            // If current body type is not valid.
-            if (!_bodyTypes.Select(proto => proto.ID).Contains(Profile.BodyType))
-            {
-                // Then replace it with a first valid body type.
-                SetBodyType(_bodyTypes.First().ID);
-            }
-
-            CBodyTypesButton.Select(_bodyTypes.FindIndex(x => x.ID == Profile.BodyType));
-            IsDirty = true;
-        }
-        // WD EDIT END
 
         /// <summary>
         /// Updates selected job priorities to the profile's.

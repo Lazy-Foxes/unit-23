@@ -25,11 +25,7 @@
   name: species-name-reptilian
   roundStart: true
   prototype: MobReptilian
-  # WD EDIT START
-  bodyTypes:
-    - ReptilianNormal
-    - ReptilianSlim
-  # WD EDIT END
+  sprites: MobReptilianSprites
   defaultSkinTone: "#34a223"
   markingLimits: MobReptilianMarkingLimits
   dollPrototype: MobReptilianDummy
@@ -38,11 +34,8 @@
   femaleFirstNames: NamesReptilianFemale
   naming: FirstDashFirst
 
-# WD EDIT START
-- type: bodyType
-  id: ReptilianNormal
-  name: body-normal
-# WD EDIT END
+- type: speciesBaseSprites
+  id: MobReptilianSprites
   sprites:
     Head: MobReptilianHead
     Face: MobHumanoidAnyMarking
@@ -59,12 +52,10 @@
     RArm: MobReptilianRArm
     LHand: MobReptilianLHand
     RHand: MobReptilianRHand
-    # WD EDIT START
-    LLeg: MobReptilianDigiLLeg
-    RLeg: MobReptilianDigiRLeg
-    LFoot: MobReptilianDigiLFoot
-    RFoot: MobReptilianDigiRFoot
-    # WD EDIT END
+    LLeg: MobReptilianLLegDigi # WWDP-Edit
+    RLeg: MobReptilianRLegDigi # WWDP-Edit
+    LFoot: MobReptilianLFootDigi # WWDP-Edit
+    RFoot: MobReptilianRFootDigi # WWDP-Edit
 
 - type: markingPoints
   id: MobReptilianMarkingLimits

@@ -29,7 +29,6 @@
     sprite: _Goobstation/Heretic/Clothing/OuterClothing/eldritch_armor.rsi
     state: icon
   - type: Clothing
-    clothingType: suit # Maid
     sprite: _Goobstation/Heretic/Clothing/OuterClothing/eldritch_armor.rsi
   - type: Armor
     coverage:

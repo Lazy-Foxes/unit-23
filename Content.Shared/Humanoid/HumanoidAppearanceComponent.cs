@@ -14,7 +14,6 @@
 
 using Content.Shared._Maid.TTS;
 using Content.Shared.DisplacementMap;
-using Content.Shared._White.Humanoid.Prototypes;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Inventory;
@@ -145,14 +144,6 @@ public sealed partial class HumanoidAppearanceComponent : Component
     public float Width = 1f;
 
     // end Goobstation: port EE height/width sliders
-
-    // WD EDIT START
-    /// <summary>
-    ///     Current body type.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public ProtoId<BodyTypePrototype> BodyType { get; set; } = SharedHumanoidAppearanceSystem.DefaultBodyType;
-    // WD EDIT END
 
     //Maid edit start
     [DataField, AutoNetworkedField]

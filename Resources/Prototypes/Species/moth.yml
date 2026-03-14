@@ -23,10 +23,7 @@
   name: species-name-moth
   roundStart: true
   prototype: MobMoth
-  # WD EDIT START
-  bodyTypes:
-    - MothNormal
-  # WD EDIT END
+  sprites: MobMothSprites
   defaultSkinTone: "#ffda93"
   markingLimits: MobMothMarkingLimits
   dollPrototype: MobMothDummy
@@ -43,11 +40,8 @@
   maxWidth: 1.25
   # end Goobstation: port EE height/width sliders
 
-# WD EDIT START
-- type: bodyType
-  id: MothNormal
-  name: body-normal
-# WD EDIT END
+- type: speciesBaseSprites
+  id: MobMothSprites
   sprites:
     Head: MobMothHead
     Face: MobHumanoidAnyMarking

@@ -8,20 +8,14 @@
   name: species-name-monkey
   roundStart: false # sad...
   prototype: MobMonkey
-  # WD EDIT START
-  bodyTypes:
-  - MonkeyNormal
-  # WD EDIT END
+  sprites: MobMonkeySprites
   dollPrototype: MobMonkeyDummy
   skinColoration: Hues
   defaultSkinTone: "#ffffff"
   markingLimits: MobMonkeyMarkingLimits
 
-# WD EDIT START
-- type: bodyType
-  id: MonkeyNormal
-  name: body-normal
-# WD EDIT END
+- type: speciesBaseSprites
+  id: MobMonkeySprites
   sprites:
     Special: MobMonkeyAnyMarking
     Head: MobMonkeyHead

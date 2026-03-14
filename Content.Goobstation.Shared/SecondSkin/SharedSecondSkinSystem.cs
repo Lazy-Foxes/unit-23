@@ -170,7 +170,8 @@ public abstract class SharedSecondSkinSystem : EntitySystem
         if (!TryComp(user, out HumanoidAppearanceComponent? appearance))
             return;
 
-        var spriteSet = _proto.Index(appearance.BodyType); // Maid edit
+        var species = _proto.Index(appearance.Species);
+        var spriteSet = _proto.Index(species.SpriteSet);
 
         foreach (var layer in user.Comp.Layers)
         {
