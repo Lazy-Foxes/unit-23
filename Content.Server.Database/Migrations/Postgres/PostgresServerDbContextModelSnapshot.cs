@@ -835,11 +835,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("integer")
                         .HasColumnName("age");
 
-                    b.Property<string>("BodyType")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("body_type");
-
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("text")

@@ -72,7 +72,6 @@ namespace Content.IntegrationTests.Tests.Preferences
                 Species = "Human",
                 Age = 21,
                 Voice = "Xrenoid", //Maid edit
-                BodyType = "Normal", // WD EDIT
                 Appearance = new(
                     "Afro",
                     Color.Aqua,

@@ -3,19 +3,13 @@
   name: species-name-shadow
   roundStart: false
   prototype: MobShadow
-# Maid edit start
-  bodyTypes:
-  - ShadowNormal
-# Maid edit start
+  sprites: MobShadowSprites
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobShadowDummy
   skinColoration: HumanToned
 
-# Maid edit start
-- type: bodyType
-  id: ShadowNormal
-  name: body-normal
-# Maid edit end
+- type: speciesBaseSprites
+  id: MobShadowSprites
   sprites:
     Head: MobShadowHead
     HeadTop: MobHumanoidAnyMarking

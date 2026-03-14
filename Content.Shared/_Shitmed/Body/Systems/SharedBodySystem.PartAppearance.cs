@@ -8,7 +8,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
-using Content.Shared._White.Humanoid.Prototypes;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Part;
 using Content.Shared._Shitmed.Body.Part;
@@ -93,12 +92,12 @@ public partial class SharedBodySystem
 
     private string? CreateIdFromPart(HumanoidAppearanceComponent bodyAppearance, HumanoidVisualLayers part)
     {
-        var bodyType = Prototypes.Index<BodyTypePrototype>(bodyAppearance.BodyType); // WD EDIT
+        var speciesProto = Prototypes.Index(bodyAppearance.Species);
+        var baseSprites = Prototypes.Index<HumanoidSpeciesBaseSpritesPrototype>(speciesProto.SpriteSet);
 
-        if (!bodyType.Sprites.ContainsKey(part)) // WD EDIT
-            return null;
-
-        return HumanoidVisualLayersExtension.GetSexMorph(part, bodyAppearance.Sex, bodyType.Sprites[part]); // WD EDIT
+        return baseSprites.Sprites.TryGetValue(part, out var value)
+            ? HumanoidVisualLayersExtension.GetSexMorph(part, bodyAppearance.Sex, value)
+            : null;
     }
 
     public void ModifyMarkings(EntityUid uid,

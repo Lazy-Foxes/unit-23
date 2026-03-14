@@ -10,10 +10,7 @@
   name: species-name-human
   roundStart: false
   prototype: BorgChassisSelectable
-# Maid edit start
-  bodyTypes:
-  - CyborgNormal
-# Maid edit start
+  sprites: CyborgSprites
   defaultSkinTone: "#fff9e2"
   markingLimits: MobHumanMarkingLimits
   maleFirstNames: NamesBorg
@@ -21,11 +18,8 @@
   dollPrototype: BorgChassisSelectable
   skinColoration: TintedHues
 
-# Maid edit start
-- type: bodyType
-  id: CyborgNormal
-  name: body-normal
-# Maid edit end
+- type: speciesBaseSprites
+  id: CyborgSprites
   sprites:
     Head: CyborgHead
     Chest: CyborgTorso

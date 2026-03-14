@@ -12,10 +12,7 @@
   name: species-name-resomi
   roundStart: false # Maid
   prototype: MobResomi
-# Maid edit start
-  bodyTypes:
-  - ResomiNormal
-# Maid edit start
+  sprites: MobResomiSprites
   defaultSkinTone: "#faf7f7"
   markingLimits: MobResomiMarkingLimits
   dollPrototype: MobResomiDummy
@@ -37,11 +34,8 @@
   maxWidth: 1
   # end Goobstation: port EE height/width sliders
 
-# Maid edit start
-- type: bodyType
-  id: ResomiNormal
-  name: body-normal
-# Maid edit end
+- type: speciesBaseSprites
+  id: MobResomiSprites
   sprites:
     Head: MobResomiHead
     Hair: MobHumanoidAnyMarking

@@ -53,7 +53,6 @@ public sealed class HumanoidMarkingModifierState : BoundUserInterfaceState
     public HumanoidMarkingModifierState(
         MarkingSet markingSet,
         string species,
-        string bodyType, // WD EDIT
         Sex sex,
         Color skinColor,
         Dictionary<HumanoidVisualLayers, CustomBaseLayerInfo> customBaseLayers
@@ -61,7 +60,6 @@ public sealed class HumanoidMarkingModifierState : BoundUserInterfaceState
     {
         MarkingSet = markingSet;
         Species = species;
-        BodyType = bodyType; // WD EDIT
         Sex = sex;
         SkinColor = skinColor;
         CustomBaseLayers = customBaseLayers;
@@ -69,7 +67,6 @@ public sealed class HumanoidMarkingModifierState : BoundUserInterfaceState
 
     public MarkingSet MarkingSet { get; }
     public string Species { get; }
-    public string BodyType { get; } // WD EDIT
     public Sex Sex { get; }
     public Color SkinColor { get; }
     public Color EyeColor { get; }

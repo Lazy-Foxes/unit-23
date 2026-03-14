@@ -3,20 +3,14 @@
   name: species-name-scurret
   roundStart: false
   prototype: MobScurret
-# Maid edit start
-  bodyTypes:
-  - ScurretNormal
-# Maid edit start
+  sprites: MobScurretSprites
   dollPrototype: MobScurretDummy
   skinColoration: Hues
   defaultSkinTone: "#ffffff"
   markingLimits: MobScurretMarkingLimits
 
-# Maid edit start
-- type: bodyType
-  id: ScurretNormal
-  name: body-normal
-# Maid edit end
+- type: speciesBaseSprites
+  id: MobScurretSprites
   sprites:
     Head: MobScurretHead
     Chest: MobScurretChest

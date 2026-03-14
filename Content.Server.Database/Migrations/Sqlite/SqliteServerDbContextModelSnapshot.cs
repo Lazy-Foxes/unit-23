@@ -786,11 +786,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("age");
 
-                    b.Property<string>("BodyType")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("body_type");
-
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("TEXT")

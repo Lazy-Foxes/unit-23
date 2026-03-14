@@ -139,10 +139,6 @@ namespace Content.Shared.Preferences
         public string Voice { get; set; } = SharedHumanoidAppearanceSystem.DefaultVoice;
         //Maid edit end
 
-        // WD EDIT START
-        [DataField]
-        public string BodyType { get; set; } = SharedHumanoidAppearanceSystem.DefaultBodyType;
-        // WD EDIT END
 
         [DataField]
         public Gender Gender { get; private set; } = Gender.Male;
@@ -193,7 +189,6 @@ namespace Content.Shared.Preferences
         [DataField]
         public PreferenceUnavailableMode PreferenceUnavailable { get; private set; } =
             PreferenceUnavailableMode.SpawnAsOverflow;
-
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
@@ -203,7 +198,6 @@ namespace Content.Shared.Preferences
             int age,
             Sex sex,
             string voice, //Maid edit
-            string bodyType, // WD EDIT
             Gender gender,
             HumanoidCharacterAppearance appearance,
             SpawnPriorityPreference spawnPriority,
@@ -212,6 +206,7 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts)
+
         {
             Name = name;
             FlavorText = flavortext;
@@ -221,7 +216,6 @@ namespace Content.Shared.Preferences
             Age = age;
             Sex = sex;
             Voice = voice; //Maid edit
-            BodyType = bodyType; // WD EDIT
             Gender = gender;
             Appearance = appearance;
             SpawnPriority = spawnPriority;
@@ -256,7 +250,6 @@ namespace Content.Shared.Preferences
                 other.Age,
                 other.Sex,
                 other.Voice, //Maid edit
-                other.BodyType, // WD EDIT
                 other.Gender,
                 other.Appearance.Clone(),
                 other.SpawnPriority,
@@ -289,7 +282,6 @@ namespace Content.Shared.Preferences
             return new()
             {
                 Species = species,
-                BodyType = SharedHumanoidAppearanceSystem.DefaultBodyType, // WD EDIT
             };
         }
 
@@ -319,14 +311,12 @@ namespace Content.Shared.Preferences
             var age = 18;
             var height = 1f; // Goobstation: port EE height/width sliders
             var width = 1f; // Goobstation: port EE height/width sliders
-            var bodyType = SharedHumanoidAppearanceSystem.DefaultBodyType; // WD EDIT
             if (prototypeManager.TryIndex<SpeciesPrototype>(species, out var speciesPrototype))
             {
                 sex = random.Pick(speciesPrototype.Sexes);
                 age = random.Next(speciesPrototype.MinAge, speciesPrototype.OldAge); // people don't look and keep making 119 year old characters with zero rp, cap it at middle aged
                 height = random.NextFloat(speciesPrototype.MinHeight, speciesPrototype.MaxHeight); // Goobstation: port EE height/width sliders
                 width = random.NextFloat(speciesPrototype.MinWidth, speciesPrototype.MaxWidth); // Goobstation: port EE height/width sliders
-                bodyType = speciesPrototype.BodyTypes.First(); // WD EDIT
             }
 
             var gender = Gender.Epicene;
@@ -355,7 +345,6 @@ namespace Content.Shared.Preferences
                 Name = name,
                 Sex = sex,
                 Voice = voiceId, //Maid edit
-                BodyType = bodyType, // WD EDIT
                 Age = age,
                 Gender = gender,
                 Species = species,
@@ -391,13 +380,6 @@ namespace Content.Shared.Preferences
             return new HumanoidCharacterProfile(this) { Voice = voice };
         }
         //Maid edit end
-
-        // WD EDIT START
-        public HumanoidCharacterProfile WithBodyType(string bodyType)
-        {
-            return new HumanoidCharacterProfile(this) { BodyType = bodyType };
-        }
-        // WD EDIT END
 
         public HumanoidCharacterProfile WithGender(Gender gender)
         {
@@ -588,7 +570,6 @@ namespace Content.Shared.Preferences
             if (Age != other.Age) return false;
             if (Sex != other.Sex) return false;
             if (Voice != other.Voice) return false; //Maid edit
-            if (BodyType != other.BodyType) return false; // WD EDIT
             if (Gender != other.Gender) return false;
             if (Species != other.Species) return false;
             if (Height != other.Height) return false; // Goobstation: port EE height/width sliders
@@ -637,14 +618,6 @@ namespace Content.Shared.Preferences
                 _ => Gender.Epicene // Invalid enum values.
             };
 
-            // WD EDIT START
-            var bodyTypeStr = BodyType;
-            if (!speciesPrototype.BodyTypes.Contains(bodyTypeStr))
-            {
-                bodyTypeStr = speciesPrototype.BodyTypes.First();
-            }
-            // WD EDIT END
-
             string name;
             var maxNameLength = configManager.GetCVar(CCVars.MaxNameLength);
             if (string.IsNullOrEmpty(Name))
@@ -661,6 +634,7 @@ namespace Content.Shared.Preferences
             }
 
             name = name.Trim();
+
 
             if (configManager.GetCVar(CCVars.RestrictedNames))
             {
@@ -753,7 +727,6 @@ namespace Content.Shared.Preferences
             Width = width; // Goobstation: port EE height/width sliders
             Sex = sex;
             Gender = gender;
-            BodyType = bodyTypeStr; // WD EDIT
             Appearance = appearance;
             SpawnPriority = spawnPriority;
 
@@ -879,7 +852,6 @@ namespace Content.Shared.Preferences
             hashCode.Add(Age);
             hashCode.Add((int) Sex);
             hashCode.Add(Voice); //Maid edit
-            hashCode.Add(BodyType); // WD EDIT
             hashCode.Add((int) Gender);
             hashCode.Add(Appearance);
             hashCode.Add((int) SpawnPriority);

@@ -208,56 +208,26 @@
     speciesId: reptilian
     # WWDP-Edit-Start
     femaleDisplacements:
-      jumpsuit-body-digitigrade:
+      jumpsuit:
         sizeMaps:
           32:
-            sprite: _White/Mobs/Species/Reptilian/displacement.rsi
-            state: jumpsuit-female-digi
-      shoes-body-digitigrade:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit-female
+      shoes:
         sizeMaps:
           32:
-            sprite: _White/Mobs/Species/Reptilian/displacement.rsi
-            state: shoes-digi
-      jumpsuit-body-slim:
-        sizeMaps:
-          32:
-            sprite: _White/Mobs/Species/Reptilian/displacement.rsi
-            state: jumpsuit-female-slim
-      shoes-body-slim:
-        sizeMaps:
-          32:
-            sprite: _White/Mobs/Species/Reptilian/displacement.rsi
-            state: shoes-slim
-      gloves-body-slim:
-        sizeMaps:
-          32:
-            sprite: _White/Mobs/Species/Human/displacement.rsi
-            state: gloves
-      outerClothing-body-slim:
-        sizeMaps:
-          32:
-            sprite: _White/Mobs/Species/Human/displacement.rsi
-            state: outer
-      hardsuit-body-slim:
-        sizeMaps:
-          32:
-            sprite: _White/Mobs/Species/Human/displacement.rsi
-            state: hardsuit
-      suit-body-slim:
-        sizeMaps:
-          32:
-            sprite: _White/Mobs/Species/Human/displacement.rsi
-            state: suit
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: shoes
     displacements:
-      jumpsuit-body-digitigrade:
+      jumpsuit:
         sizeMaps:
           32:
-            sprite: _White/Mobs/Species/Reptilian/displacement.rsi
+            sprite: _White/Mobs/Species/displacement.rsi
             state: jumpsuit
-      shoes-body-digitigrade:
+      shoes:
         sizeMaps:
           32:
-            sprite: _White/Mobs/Species/Reptilian/displacement.rsi
+            sprite: _White/Mobs/Species/displacement.rsi
             state: shoes
     # WWDP-Edit-End
   - type: Consciousness # Idk they are kinda more resistant to pain
@@ -288,56 +258,26 @@
     speciesId: reptilian
     # WWDP-Edit-Start
     femaleDisplacements:
-      jumpsuit-body-digitigrade:
+      jumpsuit:
         sizeMaps:
           32:
-            sprite: _White/Mobs/Species/Reptilian/displacement.rsi
-            state: jumpsuit-female-digi
-      shoes-body-digitigrade:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit-female
+      shoes:
         sizeMaps:
           32:
-            sprite: _White/Mobs/Species/Reptilian/displacement.rsi
-            state: shoes-digi
-      jumpsuit-body-slim:
-        sizeMaps:
-          32:
-            sprite: _White/Mobs/Species/Reptilian/displacement.rsi
-            state: jumpsuit-female-slim
-      shoes-body-slim:
-        sizeMaps:
-          32:
-            sprite: _White/Mobs/Species/Reptilian/displacement.rsi
-            state: shoes-slim
-      gloves-body-slim:
-        sizeMaps:
-          32:
-            sprite: _White/Mobs/Species/Human/displacement.rsi
-            state: gloves
-      outerClothing-body-slim:
-        sizeMaps:
-          32:
-            sprite: _White/Mobs/Species/Human/displacement.rsi
-            state: outer
-      hardsuit-body-slim:
-        sizeMaps:
-          32:
-            sprite: _White/Mobs/Species/Human/displacement.rsi
-            state: hardsuit
-      suit-body-slim:
-        sizeMaps:
-          32:
-            sprite: _White/Mobs/Species/Human/displacement.rsi
-            state: suit
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: shoes
     displacements:
-      jumpsuit-body-digitigrade:
+      jumpsuit:
         sizeMaps:
           32:
-            sprite: _White/Mobs/Species/Reptilian/displacement.rsi
+            sprite: _White/Mobs/Species/displacement.rsi
             state: jumpsuit
-      shoes-body-digitigrade:
+      shoes:
         sizeMaps:
           32:
-            sprite: _White/Mobs/Species/Reptilian/displacement.rsi
+            sprite: _White/Mobs/Species/displacement.rsi
             state: shoes
     # WWDP-Edit-End
 

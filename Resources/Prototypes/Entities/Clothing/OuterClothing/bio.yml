@@ -28,7 +28,6 @@
     sprite: Clothing/OuterClothing/Bio/general.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Bio/general.rsi
-    clothingType: suit # WD EDIT
   - type: Armor
     coverage:
     - Chest

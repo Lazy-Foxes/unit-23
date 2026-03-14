@@ -8,20 +8,14 @@
   name: species-name-kobold
   roundStart: false # sad...
   prototype: MobKobold
-  # WD EDIT START
-  bodyTypes:
-  - KoboldNormal
-  # WD EDIT END
+  sprites: MobKoboldSprites
   dollPrototype: MobKoboldDummy
   skinColoration: Hues
   defaultSkinTone: "#9a7c5a"
   markingLimits: MobKoboldMarkingLimits
 
-# WD EDIT START
-- type: bodyType
-  id: KoboldNormal
-  name: body-normal
-# WD EDIT END
+- type: speciesBaseSprites
+  id: MobKoboldSprites
   sprites:
     Special: MobKoboldAnyMarking
     Head: MobKoboldHead

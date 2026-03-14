@@ -15,10 +15,7 @@
   name: species-name-yowie
   roundStart: false # Maid
   prototype: MobYowie
-# Maid edit start
-  bodyTypes:
-  - YowieNormal
-# Maid edit start
+  sprites: MobYowieSprites
   markingLimits: MobYowieMarkingLimits
   dollPrototype: MobYowieDummy
   skinColoration: NoColor
@@ -42,11 +39,8 @@
 # be defined as a 'custom base layer'
 # in either the mob's starting marking prototype,
 # or it has to be added in C#.
-# Maid edit start
-- type: bodyType
-  id: YowieNormal
-  name: body-normal
-# Maid edit end
+- type: speciesBaseSprites
+  id: MobYowieSprites
   sprites:
     Head: MobYowieHead
     Face: MobHumanoidAnyMarking

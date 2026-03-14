@@ -9,20 +9,14 @@
   name: species-name-abductor
   roundStart: false
   prototype: MobAbductor
-# Maid edit start
-  bodyTypes:
-  - AbductorNormal
-# Maid edit start
+  sprites: MobAbductorSprites
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobAbductorDummy
   skinColoration: HumanToned
   defaultSkinTone: "#BFC2C7"
 
-# Maid edit start
-- type: bodyType
-  id: AbductorNormal
-  name: body-normal
-# Maid edit end
+- type: speciesBaseSprites
+  id: MobAbductorSprites
   sprites:
     Head: MobAbductorHead
     HeadTop: MobHumanoidAnyMarking

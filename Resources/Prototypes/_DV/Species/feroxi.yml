@@ -3,10 +3,7 @@
   name: species-name-feroxi
   roundStart: false # Maid
   prototype: MobFeroxi
-  # Maid edit start
-  bodyTypes:
-  - FeroxiNormal
-  # Maid edit end
+  sprites: MobFeroxiSprites
   defaultSkinTone: "#8DB9D6"
   markingLimits: MobFeroxiMarkingLimits
   dollPrototype: MobFeroxiDummy
@@ -15,11 +12,8 @@
   femaleFirstNames: NamesFeroxiFirstFemale
   lastNames: NamesFeroxiLast
 
-# Maid edit start
-- type: bodyType
-  id: FeroxiNormal
-  name: body-normal
-# Maid edit end
+- type: speciesBaseSprites
+  id: MobFeroxiSprites
   sprites:
     Head: MobFeroxiHead
     Hair: MobHumanoidAnyMarking
