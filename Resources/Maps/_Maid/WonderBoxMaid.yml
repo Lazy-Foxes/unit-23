@@ -107432,8 +107432,6 @@ entities:
       pos: 55.5,-44.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
     - type: AtmosPipeColor
       color: '#0000FFFF'
   - uid: 15800
