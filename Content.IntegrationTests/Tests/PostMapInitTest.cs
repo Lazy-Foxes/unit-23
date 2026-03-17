@@ -155,8 +155,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] NoSpawnMaps =
         {
             "CentComm",
-            "Dart",
-            "Atom" // Maid
+            "Dart"
         };
 
         private static readonly string[] Grids =
