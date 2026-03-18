@@ -10,10 +10,6 @@ namespace Content.Server.Database.Migrations.Sqlite
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "body_type",
-                table: "server_ban");
-
             migrationBuilder.AddColumn<string>(
                 name: "body_type",
                 table: "profile",
@@ -28,13 +24,6 @@ namespace Content.Server.Database.Migrations.Sqlite
             migrationBuilder.DropColumn(
                 name: "body_type",
                 table: "profile");
-
-            migrationBuilder.AddColumn<string>(
-                name: "body_type",
-                table: "server_ban",
-                type: "TEXT",
-                nullable: false,
-                defaultValue: "");
         }
     }
 }
