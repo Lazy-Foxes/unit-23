@@ -49,7 +49,7 @@ public sealed partial class TTSSystem : EntitySystem
 
     private async void OnAnnounceRequest(TTSAnnouncementEvent ev)
     {
-        if (!_prototypeManager.TryIndex<TTSVoicePrototype>(ev.VoiceId, out var ttsPrototype))
+        if (!_isEnabled || !_prototypeManager.TryIndex<TTSVoicePrototype>(ev.VoiceId, out var ttsPrototype))
             return;
 
         var message = FormattedMessage.RemoveMarkupOrThrow(ev.Message);
@@ -86,7 +86,7 @@ public sealed partial class TTSSystem : EntitySystem
                 .ToList();
 
             if (entities.Count == 0)
-                return;
+                continue;
 
             // Get closest emergency light
             var entity = entities.First();
