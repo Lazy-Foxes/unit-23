@@ -465,3 +465,11 @@ Entries:
       message: Слои на IPC
   id: 38
   time: '2026-03-19T17:48:17.0000000+00:00'
+- author: anonymaidys
+  changes:
+    - type: Tweak
+      message: Декали теперь больше подходят к тайлам.
+    - type: Tweak
+      message: Некоторые тайлы возвращены к образцам 2024 года.
+  id: 39
+  time: '2026-03-23T16:29:11.0000000+00:00'
