@@ -21,15 +21,12 @@ namespace Content.Server._Maid
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly SharedTransformSystem _xform = default!;
         [Dependency] private readonly IRobustRandom _random = default!;
-        [Dependency] private readonly IMapManager _mapManager = default!;
-        [Dependency] private readonly FixtureSystem _fixtureSystem = default!;
         [Dependency] private readonly PhysicsSystem _physics = default!;
-        [Dependency] private readonly IGameTiming _gameTiming = default!;
         [Dependency] private readonly BodySystem _body = default!;
         [Dependency] private readonly VisibilitySystem _visibility = default!;
         [Dependency] private readonly SharedEyeSystem _eye = default!;
 
-        const int velMultiplier = 25;
+        private const int VelMultiplier = 25;
 
         public override void Update(float frameTime)
         {
@@ -73,20 +70,12 @@ namespace Content.Server._Maid
                 foreach (var (id, fixture) in playerFixtures.Fixtures)
                 {
                     var currentLayer = fixture.CollisionLayer;
-                    _physics.SetCollisionLayer(uid,
-                        id,
-                        fixture,
-                        currentLayer | (int) CollisionGroup.DoorPassable,
-                        playerFixtures,
-                        playerPhysics);
+                    _physics.SetCollisionLayer(uid, id, fixture, currentLayer | (int) CollisionGroup.DoorPassable,
+                        playerFixtures, playerPhysics);
 
                     var currentMask = fixture.CollisionMask;
-                    _physics.SetCollisionMask(uid,
-                        id,
-                        fixture,
-                        currentMask | (int) CollisionGroup.DoorPassable,
-                        playerFixtures,
-                        playerPhysics);
+                    _physics.SetCollisionMask(uid, id, fixture, currentMask | (int) CollisionGroup.DoorPassable,
+                        playerFixtures, playerPhysics);
                 }
             }
 
@@ -101,19 +90,16 @@ namespace Content.Server._Maid
 
         private void TrainSpawn(EntityUid uid, EntityCoordinates coords)
         {
-            var direction = _random.Next(1, 5);
-
+            // Braindamage code below
+            var direction = _random.Next(1, 9);
             var offset = direction switch
             {
-                1 => new Vector2(-100, 0),
-                2 => new Vector2(100, 0),
-                3 => new Vector2(0, -100),
-                4 => new Vector2(0, 100),
+                1 => new Vector2(-100, 0), 2 => new Vector2(100, 0), 3 => new Vector2(0, -100), 4 => new Vector2(0, 100),
+                5 => new Vector2(-100, -100), 6 => new Vector2(100, -100), 7 => new Vector2(-100, 100), 8 => new Vector2(100, 100),
                 _ => Vector2.Zero
             };
 
             var spawnPos = coords.Offset(offset);
-
             var train = SpawnAtPosition("Thomas", spawnPos);
 
             if (TryComp<VisibilityComponent>(train, out var visibility))
@@ -126,19 +112,11 @@ namespace Content.Server._Maid
             {
                 foreach (var (id, fixture) in trainFixtures.Fixtures)
                 {
-                    _physics.SetCollisionLayer(train,
-                        id,
-                        fixture,
-                        (int) CollisionGroup.DoorPassable,
-                        trainFixtures,
-                        trainPhysics);
-                    _physics.SetCollisionMask(train,
-                        id,
-                        fixture,
-                        (int) CollisionGroup.DoorPassable,
-                        trainFixtures,
-                        trainPhysics);
-                    _physics.SetHard(train, fixture, true, trainFixtures);
+                    _physics.SetCollisionLayer(train, id, fixture, (int) CollisionGroup.DoorPassable,
+                        trainFixtures, trainPhysics);
+                    _physics.SetCollisionMask(train, id, fixture, (int) CollisionGroup.DoorPassable,
+                        trainFixtures, trainPhysics);
+                    _physics.SetHard(train, fixture, false, trainFixtures);
                 }
 
                 _physics.SetBodyType(train, BodyType.KinematicController, trainFixtures, trainPhysics);
@@ -159,12 +137,11 @@ namespace Content.Server._Maid
                 _xform.SetLocalRotation(train, angle);
             }
 
-            // Импульс
             if (TryComp<PhysicsComponent>(train, out var phys))
             {
                 if (TryComp<HateEngineComponent>(train, out var comp))
                 {
-                    var velocity = directionToPlayer.Normalized() * velMultiplier; // ~5 seconds to die
+                    var velocity = directionToPlayer.Normalized() * VelMultiplier; // ~5 seconds to die
                     comp.InitialVelocity = velocity;
                     _physics.SetLinearVelocity(train, velocity, body: phys);
                 }
