@@ -1,16 +1,16 @@
 using System.Numerics;
-using Content.Server._Maid.TTS;
+using Content.Server.Audio;
 using Content.Server.Body.Systems;
 using Content.Shared.Eye;
 using Content.Shared.Physics;
 using Robust.Server.GameObjects;
+using Robust.Server.GameStates;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
-using Robust.Shared.Physics.Systems;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
@@ -18,15 +18,27 @@ namespace Content.Server._Maid
 {
     public sealed class HateEngine : EntitySystem
     {
+        [Dependency] private readonly PvsOverrideSystem _pvs = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
+        [Dependency] private readonly AmbientSoundSystem _ambient = default!;
         [Dependency] private readonly SharedTransformSystem _xform = default!;
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly PhysicsSystem _physics = default!;
         [Dependency] private readonly BodySystem _body = default!;
         [Dependency] private readonly VisibilitySystem _visibility = default!;
         [Dependency] private readonly SharedEyeSystem _eye = default!;
+        [Dependency] private readonly IGameTiming _timing = default!;
 
         private const int VelMultiplier = 25;
+        private const float DespawnDelaySeconds = 15f;
+
+        public override void Initialize()
+        {
+            base.Initialize();
+
+            SubscribeLocalEvent<HateEngineComponent, StartCollideEvent>(ThomasCrashEvent);
+            SubscribeLocalEvent<HateEngineComponent, ComponentStartup>(OnStartup);
+        }
 
         public override void Update(float frameTime)
         {
@@ -35,6 +47,16 @@ namespace Content.Server._Maid
             var query = EntityQueryEnumerator<HateEngineComponent>();
             while (query.MoveNext(out var uid, out var engine))
             {
+                if (engine.SpawnTime != TimeSpan.Zero)
+                {
+                    var elapsed = _timing.CurTime - engine.SpawnTime;
+                    if (elapsed.TotalSeconds >= DespawnDelaySeconds)
+                    {
+                        Del(uid);
+                        continue;
+                    }
+                }
+
                 if (!engine.Acceleration)
                     continue;
                 if (!TryComp<PhysicsComponent>(uid, out var phys))
@@ -43,11 +65,12 @@ namespace Content.Server._Maid
             }
         }
 
-        public override void Initialize()
+        private void OnStartup(EntityUid uid, HateEngineComponent comp, ComponentStartup args)
         {
-            base.Initialize();
-
-            SubscribeLocalEvent<HateEngineComponent, StartCollideEvent>(ThomasCrashEvent);
+            if (!comp.Acceleration)
+                return;
+            _pvs.AddGlobalOverride(uid);
+            _audio.PlayPvs(comp.HateEngine, uid, AudioParams.Default.WithMaxDistance(125f));
         }
 
         private void ThomasCrashEvent(EntityUid uid, HateEngineComponent component, StartCollideEvent args)
@@ -56,8 +79,7 @@ namespace Content.Server._Maid
 
             if (!HasComp<HateEngineTargetComponent>(ent))
                 return;
-            _body.GibBody(ent);
-            Del(args.OurEntity);
+            _body.GibBody(ent, true);
         }
 
         public void OnHateEngineCall(EntityUid uid)
@@ -94,8 +116,10 @@ namespace Content.Server._Maid
             var direction = _random.Next(1, 9);
             var offset = direction switch
             {
-                1 => new Vector2(-100, 0), 2 => new Vector2(100, 0), 3 => new Vector2(0, -100), 4 => new Vector2(0, 100),
-                5 => new Vector2(-100, -100), 6 => new Vector2(100, -100), 7 => new Vector2(-100, 100), 8 => new Vector2(100, 100),
+                1 => new Vector2(-125, 0), 2 => new Vector2(125, 0),
+                3 => new Vector2(0, -125), 4 => new Vector2(0, 125),
+                5 => new Vector2(-125, -125), 6 => new Vector2(125, -125),
+                7 => new Vector2(-125, 125), 8 => new Vector2(125, 125),
                 _ => Vector2.Zero
             };
 
@@ -144,6 +168,7 @@ namespace Content.Server._Maid
                     var velocity = directionToPlayer.Normalized() * VelMultiplier; // ~5 seconds to die
                     comp.InitialVelocity = velocity;
                     _physics.SetLinearVelocity(train, velocity, body: phys);
+                    comp.SpawnTime = _timing.CurTime;
                 }
             }
         }
