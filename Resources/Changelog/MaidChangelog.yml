@@ -491,3 +491,9 @@ Entries:
       message: Добавлено веселье c Томасом!
   id: 42
   time: '2026-04-13T17:56:58.0000000+00:00'
+- author: Warete
+  changes:
+    - type: Add
+      message: Карта BoxMaid - pahan_chiiiil
+  id: 43
+  time: '2026-04-13T17:56:43.0000000+00:00'
