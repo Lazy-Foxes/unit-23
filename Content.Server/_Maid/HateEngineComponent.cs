@@ -18,4 +18,7 @@ public sealed partial class HateEngineComponent : Component
 
     [DataField("playingMusic")]
     public SoundSpecifier HateEngine = new SoundCollectionSpecifier("HateEngine");
+
+    [DataField]
+    public SoundSpecifier GibEngine = new SoundCollectionSpecifier("GibEngine");
 }

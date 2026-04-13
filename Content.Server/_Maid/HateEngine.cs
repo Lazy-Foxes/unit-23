@@ -1,5 +1,5 @@
 using System.Numerics;
-using Content.Server.Audio;
+using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
 using Content.Shared.Eye;
 using Content.Shared.Physics;
@@ -20,7 +20,6 @@ namespace Content.Server._Maid
     {
         [Dependency] private readonly PvsOverrideSystem _pvs = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
-        [Dependency] private readonly AmbientSoundSystem _ambient = default!;
         [Dependency] private readonly SharedTransformSystem _xform = default!;
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly PhysicsSystem _physics = default!;
@@ -73,13 +72,23 @@ namespace Content.Server._Maid
             _audio.PlayPvs(comp.HateEngine, uid, AudioParams.Default.WithMaxDistance(125f));
         }
 
-        private void ThomasCrashEvent(EntityUid uid, HateEngineComponent component, StartCollideEvent args)
+        private void ThomasCrashEvent(EntityUid uid, HateEngineComponent comp, StartCollideEvent args)
         {
-            var ent = args.OtherEntity;
+            var player = args.OtherEntity;
+            var coords = Transform(player).Coordinates;
 
-            if (!HasComp<HateEngineTargetComponent>(ent))
+            if (!HasComp<HateEngineTargetComponent>(player))
                 return;
-            _body.GibBody(ent, true);
+
+            var organs = _body.GetBodyOrganEntityComps<TransformComponent>(args.OtherEntity);
+            foreach (var organ in organs)
+            {
+                if (HasComp<BrainComponent>(organ.Owner))
+                    Del(organ);
+            }
+
+            _body.GibBody(player);
+            _audio.PlayPvs(comp.GibEngine, coords);
         }
 
         public void OnHateEngineCall(EntityUid uid)

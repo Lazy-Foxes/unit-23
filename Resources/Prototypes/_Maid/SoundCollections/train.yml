@@ -9,3 +9,8 @@
     - /Audio/_Maid/Misc/Train/thom_6.ogg
     - /Audio/_Maid/Misc/Train/thom_7.ogg
     - /Audio/_Maid/Misc/Train/thom_8.ogg
+
+- type: soundCollection
+  id: GibEngine
+  files:
+  - /Audio/_Maid/Misc/Train/gib_train.ogg
