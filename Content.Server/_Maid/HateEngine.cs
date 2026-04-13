@@ -59,7 +59,7 @@ namespace Content.Server._Maid
                 if (!engine.Acceleration)
                     continue;
                 if (!TryComp<PhysicsComponent>(uid, out var phys))
-                    return;
+                    continue;
                 _physics.SetLinearVelocity(uid, engine.InitialVelocity, body: phys);
             }
         }

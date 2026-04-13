@@ -2,7 +2,7 @@
   parent: BaseMob
   id: Thomas
   name: Thomas
-  description: De._uck???
+  description: Deduck???
   components:
   - type: Visibility
   - type: Sprite

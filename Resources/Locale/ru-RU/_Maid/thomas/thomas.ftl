@@ -1,5 +1,5 @@
 ent-Thomas = Томас
-    .desc = Чей-то свет в конце тунеля.
+    .desc = Чей-то свет в конце туннеля.
 
 admin-smite-thomas-name = Паровозик
 admin-smite-thomas-description = Взывает Томаса на полной скорости, что виден жертве и призракам.
