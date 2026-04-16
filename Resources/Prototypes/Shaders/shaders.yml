@@ -146,9 +146,4 @@
   kind: source
   path: "/Textures/_Maid/Shaders/monochrome_signal_drift.swsl"
 
-- type: shader
-  id: Wave
-  kind: source
-  path: "/Textures/_Maid/Shaders/wave.swsl"
-
 # Maid

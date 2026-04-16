@@ -16,9 +16,11 @@ ent-LockerDetectiveFilled = { ent-LockerDetective }
 ent-ClosetBombFilled = { ent-ClosetBomb }
     .suffix = Заполненный
     .desc = { ent-ClosetBomb.desc }
-ent-GunSafeDisabler = оружейный сейф станнеров
+# Maid
+ent-GunSafeDisabler = оружейный сейф дизейблеров
     .suffix = Станнер
     .desc = { ent-GunSafe.desc }
+# MaidEnd
 ent-GunSafePistolMk58 = оружейный сейф MK58
     .suffix = MK58
     .desc = { ent-GunSafe.desc }

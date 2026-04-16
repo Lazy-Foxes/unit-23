@@ -52,8 +52,8 @@
   # Lavaland Change start
   - type: WeaponAttachment
     lightActionPrototype: ActionTogglePKALight
-#  - type: PressureDamageChange #Maid
-#    applyToMelee: false #Maid
+  - type: PressureDamageChange
+    applyToMelee: false
   - type: Multishot # Goobstation V
     missChance: 0.4
     spreadMultiplier: 3

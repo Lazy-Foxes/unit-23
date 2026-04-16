@@ -44,7 +44,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingHeadHelmetBasic
+      - id: ClothingHeadHelmetBasicAlt #Maid
         amount: 3
 
 - type: entity

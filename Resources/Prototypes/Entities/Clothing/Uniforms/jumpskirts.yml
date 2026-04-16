@@ -302,20 +302,21 @@
     sprite: _Maid/Clothing/Uniforms/Jumpskirt/hos.rsi
   - type: Clothing
     sprite: _Maid/Clothing/Uniforms/Jumpskirt/hos.rsi
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left
-        color: "#C12D30"
-        sprite: Clothing/Uniforms/Jumpskirt/color.rsi
-      - state: overlay-inhand-left
-        sprite: _Maid/Clothing/Uniforms/Jumpsuit/hos.rsi
-      right:
-      - state: inhand-right
-        color: "#C12D30"
-        sprite: Clothing/Uniforms/Jumpskirt/color.rsi
-      - state: overlay-inhand-right
-        sprite: _Maid/Clothing/Uniforms/Jumpsuit/hos.rsi
+  - type: Item #Maid edit start
+#    inhandVisuals:
+#      left:
+#      - state: inhand-left
+#        color: "#C12D30"
+#        sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+#      - state: overlay-inhand-left
+#        sprite: _Maid/Clothing/Uniforms/Jumpsuit/hos.rsi
+#      right:
+#      - state: inhand-right
+#        color: "#C12D30"
+#        sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+#      - state: overlay-inhand-right
+#        sprite: _Maid/Clothing/Uniforms/Jumpsuit/hos.rsi
+    sprite: _Maid/Clothing/Uniforms/Jumpskirt/hos.rsi #Maid edit end
 
 - type: entity
   parent: [ClothingUniformSkirtBase, BaseCommandContraband]
@@ -522,21 +523,21 @@
     sprite: _Maid/Clothing/Uniforms/Jumpskirt/security.rsi
   - type: Clothing
     sprite: _Maid/Clothing/Uniforms/Jumpskirt/security.rsi
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left
-        color: "#C12D30"
-        sprite: Clothing/Uniforms/Jumpskirt/color.rsi
-      - state: overlay-inhand-left
-        sprite: _Maid/Clothing/Uniforms/Jumpsuit/security.rsi
-      right:
-      - state: inhand-right
-        color: "#C12D30"
-        sprite: Clothing/Uniforms/Jumpskirt/color.rsi
-      - state: overlay-inhand-right
-        sprite: _Maid/Clothing/Uniforms/Jumpsuit/security.rsi
-
+  - type: Item #Maid edit start
+#    inhandVisuals:
+#      left:
+#      - state: inhand-left
+#        color: "#C12D30"
+#        sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+#      - state: overlay-inhand-left
+#        sprite: _Maid/Clothing/Uniforms/Jumpsuit/security.rsi
+#      right:
+#      - state: inhand-right
+#        color: "#C12D30"
+#        sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+#      - state: overlay-inhand-right
+#        sprite: _Maid/Clothing/Uniforms/Jumpsuit/security.rsi
+    sprite: _Maid/Clothing/Uniforms/Jumpskirt/security.rsi #Maid edit end
 
 - type: entity
   parent: [ClothingUniformSkirtBase, BaseSecurityContraband]
@@ -548,21 +549,21 @@
     sprite: _Maid/Clothing/Uniforms/Jumpskirt/warden.rsi
   - type: Clothing
     sprite: _Maid/Clothing/Uniforms/Jumpskirt/warden.rsi
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left
-        color: "#C12D30"
-        sprite: Clothing/Uniforms/Jumpskirt/color.rsi
-      - state: overlay-inhand-left
-        sprite: _Maid/Clothing/Uniforms/Jumpsuit/warden.rsi
-      right:
-      - state: inhand-right
-        color: "#C12D30"
-        sprite: Clothing/Uniforms/Jumpskirt/color.rsi
-      - state: overlay-inhand-right
-        sprite: _Maid/Clothing/Uniforms/Jumpsuit/warden.rsi
-
+  - type: Item #Maid edit start
+#    inhandVisuals:
+#      left:
+#      - state: inhand-left
+#        color: "#C12D30"
+#        sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+#      - state: overlay-inhand-left
+#        sprite: _Maid/Clothing/Uniforms/Jumpsuit/warden.rsi
+#      right:
+#      - state: inhand-right
+#        color: "#C12D30"
+#        sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+#      - state: overlay-inhand-right
+#        sprite: _Maid/Clothing/Uniforms/Jumpsuit/warden.rsi
+    sprite: _Maid/Clothing/Uniforms/Jumpskirt/warden.rsi #Maid edit end
 
 - type: entity
   parent: ClothingUniformSkirtBase

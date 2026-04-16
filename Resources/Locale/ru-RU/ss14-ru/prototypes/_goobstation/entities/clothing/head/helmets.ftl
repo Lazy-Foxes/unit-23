@@ -1,7 +1,7 @@
 ent-ClothingHeadHelmetHelldiver = тактический шлем NT-01 "Сальваж"
     .desc = Этот шлем — стандартное снаряжение NanoTrasen, изготовлен из того же титанового сплава, что и корпус "Голиафа".
 ent-ClothingHeadHelmetHEV = шлем H.E.V.
-    .desc = Не входит в комплект с монтировкой, модулем дальнего прыжка и устройством управления гравитацией.
+    .desc = Не входит в комплект с ломом, модулем дальнего прыжка и устройством управления гравитацией.
 ent-ClothingHeadHelmetBasicAlt = { ent-ClothingHeadHelmetBasic }
     .suffix = Альтернативный
     .desc = { ent-ClothingHeadHelmetBasic.desc }

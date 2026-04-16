@@ -65,6 +65,7 @@
       - id: ClothingMaskBreath
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
+      - id: Flare #Maid
       - id: SpaceMedipen
       - id: FoodTinMRE
       - id: DrinkWaterBottleFull

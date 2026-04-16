@@ -30,7 +30,7 @@
     fireCost: 0.1
   - type: Appearance
   - type: AmmoCounter
-#  - type: PressureDamageChange #Maid
+  - type: PressureDamageChange
   - type: UpgradeableGun
     maxUpgradeCapacity: 40
     whitelist:

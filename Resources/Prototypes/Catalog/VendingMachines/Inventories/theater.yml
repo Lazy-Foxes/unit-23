@@ -51,6 +51,7 @@
 # SPDX-FileCopyrightText: 2025 Smith <182301147+AgentSmithRadio@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 2026 YouVeBeenLOLed <youbeenloled@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -103,8 +104,8 @@
     ClothingUniformJumpsuitKimono: 1
     ClothingHeadHatCasa: 1
     FoodPoppy: 1
-    ClothingHeadHatGladiator: 1
-    ClothingUniformJumpsuitGladiator: 1
+#    ClothingHeadHatGladiator: 1 #Maid
+#    ClothingUniformJumpsuitGladiator: 1 #Maid
     ClothingHeadHatCowboyBrown: 1
     ClothingHeadHatCowboyBlack: 1
     ClothingHeadHatCowboyWhite: 1
@@ -112,13 +113,13 @@
     ClothingShoesBootsCowboyBrown: 1
     ClothingShoesBootsCowboyBlack: 1
     ClothingShoesBootsCowboyWhite: 1
-    ClothingCostumeAbductorHead: 1
-    ClothingCostumeAbductor: 1
-    ClothingHeadSanabi: 1 # Goobstation
-    ClothingNeckCloakSanabi: 1 # Goobstation
-    ClothingCostumeGingerbreadHead: 1 #goob
-    ClothingOuterSuitHotDog: 1 # Goob
-    ClothingOuterSuitPickle: 1
+#    ClothingCostumeAbductorHead: 1 #Maid
+#    ClothingCostumeAbductor: 1 #Maid
+#    ClothingHeadSanabi: 1 # Goobstation #Maid
+#    ClothingNeckCloakSanabi: 1 # Goobstation #Maid
+#    ClothingCostumeGingerbreadHead: 1 #goob #Maid
+#    ClothingOuterSuitHotDog: 1 # Goob #Maid
+#    ClothingOuterSuitPickle: 1 #Maid
   contrabandInventory:
     ClothingHeadHatRichard: 1
     ClothingShoesBling: 1

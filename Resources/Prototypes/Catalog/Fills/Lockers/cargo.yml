@@ -47,10 +47,8 @@
   components:
   - type: StorageFill
     contents:
-      #- id: ClothingOuterHardsuitSalvage #Goobstation
       - id: OxygenTankFilled
       - id: NitrogenTankFilled
-      #- id: ClothingShoesBootsMag
       - id: ClothingMaskGasExplorer
       - id: ClothingBeltUtilityFilled
       - id: SurvivalKnife
@@ -58,12 +56,19 @@
       - id: RadioHandheld
       - id: SeismicCharge
         amount: 2
-      - id: Flare
-        prob: 0.3
-      - id: Flare
-        prob: 0.3
-      - id: Flare
-        prob: 0.3
+      - id: ClothingOuterHardsuitSpatio #Maid edit start
+      - id: ClothingShoesBootsMag
+      - id: ClothingHandsGlovesColorBlack
+      - id: WeaponFlareGun
+      - id: FlashlightLantern
+      - id: WeaponCrusher
+      - id: BoxFlare 
+#      - id: Flare
+#        prob: 0.3
+#      - id: Flare
+#        prob: 0.3
+#      - id: Flare
+#        prob: 0.3 #Maid edit end
       # Lavaland Change Start
       - id: WeaponProtoKineticAccelerator
       - id: OreBag
@@ -71,9 +76,9 @@
       - id: LavalandJaunter
       - id: LavalandEquipmentExplorerSuit
       - id: ShelterCapsule
-      - id: ClothingMaskGasExplorer
+#      - id: ClothingMaskGasExplorer #Maid
       - id: MineralScanner
-      - id: FlashlightSeclite
+#      - id: FlashlightSeclite #Maid
       - id: ClothingEyesGlassesMeson
       # Lavaland Change End
 
@@ -91,12 +96,17 @@
       - id: RadioHandheld
       - id: SeismicCharge
         amount: 2
-      - id: Flare
-        prob: 0.3
-      - id: Flare
-        prob: 0.3
-      - id: Flare
-        prob: 0.3
+      - id: ClothingHandsGlovesColorBlack #Maid edit start
+      - id: WeaponFlareGun
+      - id: FlashlightLantern
+      - id: WeaponCrusher
+      - id: BoxFlare 
+#      - id: Flare
+#        prob: 0.3
+#      - id: Flare
+#        prob: 0.3
+#      - id: Flare
+#        prob: 0.3 #Maid edit end
       # Lavaland Change Start
       - id: WeaponProtoKineticAccelerator
       - id: OreBag

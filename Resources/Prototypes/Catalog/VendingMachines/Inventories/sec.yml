@@ -36,6 +36,7 @@
 # SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 # SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 2026 YouVeBeenLOLed <youbeenloled@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -64,15 +65,16 @@
     CombatKnife: 1 # Goob edit
     # Goobstation
     PolymerBaton: 1
-    SpearTelescopic: 1
+#    SpearTelescopic: 1 #Maid
     BolaEnergy: 5
     PepperSpray: 3
-#    SecondSkinSecurity: 3
-    SecHypo: 2
-    CartridgeEpinephrine: 2
-    CartridgeSaline: 2
-    CartridgeBicaridine: 2
-    CartridgeDermaline: 2 # Goobstation - end
+#    SecondSkinSecurity: 3 #Maid
+#    SecHypo: 2 #Maid
+#    CartridgeEpinephrine: 2 #Maid
+#    CartridgeSaline: 2 #Maid
+#    CartridgeBicaridine: 2 #Maid
+#    CartridgeDermaline: 2 # Goobstation - end #Maid
+    SmokeGrenade: 4 #Maid
   # security officers need to follow a diet regimen!
   contrabandInventory:
     WeaponMeleeNeedle: 2

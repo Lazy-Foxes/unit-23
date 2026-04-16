@@ -1,27 +1,18 @@
-<!-- Guidelines: https://docs.spacestation14.io/en/getting-started/pr-guideline -->
-<!-- NOTE: All code submitted to this repository is ALWAYS licensed under the AGPL-3.0-or-later license.
-The REUSE Specification headers or separate .license files indicate a secondary license (e.g., MPL or MIT) solely to facilitate
-integration for projects that do not use the AGPL license. This secondary license does not replace the fact that AGPL-3.0-or-later remains the primary and binding license.
-Uncomment and modify the following line if you wish to change the license from the default of AGPL.-->
-<!--- LICENSE: AGPL -->
+## Описание
+<!-- Изменения в этом PR -->
 
-## About the PR
-<!-- What did you change? -->
+---
 
-## Requirements
-<!-- Confirm the following by placing an X in the brackets [X]: -->
-- [ ] I have read and am following the [Pull Request and Changelog Guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
-- [ ] I have added media to this PR or it does not require an ingame showcase.
-<!-- You should understand that not following the above may get your PR closed at maintainer’s discretion -->
+## Медиа
+<!-- Скриншоты/видео изменений -->
 
-**Changelog**
-<!-- Add a Changelog entry to make players aware of new features or changes that could affect gameplay.
-Make sure to read the guidelines and take this Changelog template out of the comment block in order for it to show up.
-Changelog must have a :cl: symbol, so the bot recognizes the changes and adds them to the game's changelog. -->
-<!--
+---
+
+## Изменения
+<!-- Чейнджлог что будет отправлен в Discord и записан в "Обновления" в игре
+Можно указывать ник (:cl: Warete), в противном случае будет взят никнейм GitHub -->
 :cl:
-- add: Added fun!
-- remove: Removed fun!
-- tweak: Changed fun!
-- fix: Fixed fun!
--->
+- add: Добавлено веселье!
+- remove: Удалено веселье!
+- tweak: Изменено веселье!
+- fix: Исправлено веселье!

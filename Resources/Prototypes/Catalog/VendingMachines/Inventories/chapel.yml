@@ -32,6 +32,7 @@
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2026 YouVeBeenLOLed <youbeenloled@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -57,13 +58,13 @@
     BoxCandle: 2
     BoxCandleSmall: 2
     Urn: 5
-    SpectralLocator: 1
-    TemplarArmor: 1 #goob
+#    SpectralLocator: 1 #Maid
+#    TemplarArmor: 1 #goob #Maid
     ClothingHeadHelmetTemplar: 2 #goob
-    ClothingOuterClownPriest: 1 #goob
-    MonkRobes: 1 #goob
-    ClothingHeadHatImam: 1 #goob
-    HeadSkeleton: 1 #goob
+#    ClothingOuterClownPriest: 1 #goob #Maid
+#    MonkRobes: 1 #goob #Maid
+#    ClothingHeadHatImam: 1 #goob #Maid
+#    HeadSkeleton: 1 #goob #Maid
   contrabandInventory:
     FoodBakedBunHotX: 2
     DrinkWineBottleFull: 1

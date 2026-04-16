@@ -38,7 +38,7 @@
 - type: cargoProduct
   id: EngineeringCableMv
   icon:
-    sprite: Objects/Tools/cable-coils.rsi
+    sprite: _Maid/Objects/Tools/cable-coils.rsi #Maid
     state: coilmv-30
   product: CrateEngineeringCableMV
   cost: 300
@@ -48,7 +48,7 @@
 - type: cargoProduct
   id: EngineeringCableHv
   icon:
-    sprite: Objects/Tools/cable-coils.rsi
+    sprite: _Maid/Objects/Tools/cable-coils.rsi #Maid
     state: coilhv-30
   product: CrateEngineeringCableHV
   cost: 300

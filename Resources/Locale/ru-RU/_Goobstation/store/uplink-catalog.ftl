@@ -24,6 +24,7 @@
 # SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Weide <64257676+Lyacs@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 absurd-shaman <165011607+absurd-shaman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2026 YouVeBeenLOLed <youbeenloled@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -96,8 +97,10 @@ uplink-l6-saw-desc = Легендарный лёгкий пулемёт.
 uplink-m90-name = M-90
 uplink-estoc-name = эсток
 uplink-estoc-desc = Штурмовая винтовка с прицелом средней дальности, рассчитана для боя на дистанции.
-uplink-syndicate-disabler-name = Станнер синдиката
-uplink-syndicate-disabler-desc = Продвинутый станнер, созданный на основе прототипа Nanotrasen. Хоть ему и не хватает мощности, это компенсируется самозаряжающейся батареей.
+# Maid
+uplink-syndicate-disabler-name = Дизейблер синдиката
+uplink-syndicate-disabler-desc = Продвинутый дизейблер, созданный на основе прототипа Nanotrasen. Хоть ему и не хватает мощности, это компенсируется самозаряжающейся батареей.
+# MaidEnd
 uplink-m90-desc = Боевая винтовка M-90.
 uplink-dualetta-bundle-name = Комплект Дуалетта
 uplink-dualetta-bundle-desc = В комплекте 2 пистолета Дуалетта, 2 магазина, перчатки, костюм нуар, тренч детектива и шнурованные ботинки.

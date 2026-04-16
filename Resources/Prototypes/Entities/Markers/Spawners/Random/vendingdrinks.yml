@@ -27,7 +27,7 @@
       - VendingMachineDrGibb
       - VendingMachinePwrGame
       - VendingMachineShamblersJuice
-      - VendingMachineSmite
+#      - VendingMachineSmite #Maid
       - VendingMachineSoda #Robust Sofdrinks [Soda]
       - VendingMachineSovietSoda #Boda
       - VendingMachineSpaceUp

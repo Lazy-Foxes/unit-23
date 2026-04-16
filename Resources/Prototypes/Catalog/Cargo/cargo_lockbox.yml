@@ -1,9 +1,9 @@
 - type: cargoProduct
   id: CrateLockBoxEngineering
   icon:
-    sprite: Structures/Storage/Crates/lockbox.rsi
+    sprite: _Maid/Structures/Storage/Crates/engicrate_secure.rsi #Maid
     state: icon
-  product: CrateLockBoxEngineering
+  product: CrateEngineeringSecure #Maid
   cost: 100
   category: cargoproduct-category-name-engineering
   group: market
@@ -11,19 +11,19 @@
 - type: cargoProduct
   id: CrateLockBoxMedical
   icon:
-    sprite: Structures/Storage/Crates/lockbox.rsi
+    sprite: _Maid/Structures/Storage/Crates/medicalcrate_secure.rsi #Maid
     state: icon
-  product: CrateLockBoxMedical
+  product: CrateMedicalSecure #Maid
   cost: 100
-  category: cargoproduct-category-name-medical
+  category: cargoproduct-category-name-medical #Maid
   group: market
 
 - type: cargoProduct
   id: CrateLockBoxScience
   icon:
-    sprite: Structures/Storage/Crates/lockbox.rsi
+    sprite: _Maid/Structures/Storage/Crates/scicrate_secure.rsi #Maid
     state: icon
-  product: CrateLockBoxScience
+  product: CrateScienceSecure #Maid
   cost: 100
   category: cargoproduct-category-name-science
   group: market
@@ -31,9 +31,9 @@
 - type: cargoProduct
   id: CrateLockBoxSecurity
   icon:
-    sprite: Structures/Storage/Crates/lockbox.rsi
+    sprite: _Maid/Structures/Storage/Crates/sec_gear.rsi #Maid 
     state: icon
-  product: CrateLockBoxSecurity
+  product: CrateContrabandStorageSecure #Maid
   cost: 100
   category: cargoproduct-category-name-security
   group: market
@@ -41,9 +41,9 @@
 - type: cargoProduct
   id: CrateLockBoxService
   icon:
-    sprite: Structures/Storage/Crates/lockbox.rsi
+    sprite: _Maid/Structures/Storage/Crates/secure.rsi #Maid
     state: icon
-  product: CrateLockBoxService
+  product: CrateSecure #Maid
   cost: 100
   category: cargoproduct-category-name-service
   group: market

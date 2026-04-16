@@ -277,6 +277,7 @@
 # SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2026 YouVeBeenLOLed <youbeenloled@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -657,7 +658,7 @@
     - MechEquipment
     # Goobstation Packs
     - MechPartsGoob
-    - Modsuits
+#    - Modsuits #Maid
     - PowerCages
     - BorgModulesGoob
     - BasicCybernetics
@@ -881,6 +882,7 @@
     - Chemistry
     # Goobstation Packs
     - Surgery
+    - MedicalBoardsGoob #Maid
     - MedicalCybernetics
     - EnvirosuitExtinguisherRefill
     - MedicalMisc
@@ -921,9 +923,9 @@
     idleState: icon
     runningState: building
     staticPacks:
-    - ClothingCivilian
+#    - ClothingCivilian #Maid
     - ClothingCargo
-    - ClothingCommand
+#    - ClothingCommand #Maid
     - ClothingEngineering
     - ClothingMedical
     - ClothingScience

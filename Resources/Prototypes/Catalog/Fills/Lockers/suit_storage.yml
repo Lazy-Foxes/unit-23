@@ -168,7 +168,7 @@
         - id: OxygenTankFilled
         - id: NitrogenTankFilled
         - id: ClothingShoesBootsMag
-        - id: UndeterminedVoidsuitEngineer # Goob edit
+        - id: ClothingOuterHardsuitEngineering #Maid edit
         - id: ClothingMaskBreath
   - type: AccessReader
     access: [["Engineering"]]
@@ -183,7 +183,7 @@
     contents:
         - id: OxygenTankFilled
         - id: NitrogenTankFilled
-        - id: ClothingModsuitAtmostechPowerCell
+        - id: ClothingOuterHardsuitAtmos #Maid edit
         - id: ClothingMaskBreath
   - type: AccessReader
     access: [["Atmospherics"]]
@@ -206,7 +206,7 @@
   table: !type:AllSelector
     children:
     - id: OxygenTankFilled
-    - id: UndeterminedVoidsuitSecurity # Goob edit
+    - id: ClothingOuterHardsuitSecurity #Maid edit
     - id: ClothingMaskBreath
 
 #CE's hardsuit

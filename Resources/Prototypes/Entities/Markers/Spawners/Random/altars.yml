@@ -24,9 +24,9 @@
         - AltarSpaceChristian
         - AltarTechnology
         - AltarConvert
-        - AltarHeaven
-        - AltarFangs
-        - AltarBananium
+#        - AltarHeaven #Maid
+#        - AltarFangs #Maid
+#        - AltarBananium #Maid
         - AltarConvertMaint
       offset: 0.0
 

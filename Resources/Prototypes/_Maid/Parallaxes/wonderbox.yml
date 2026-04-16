@@ -26,7 +26,6 @@
     scale: "0.25, 0.25"
     scrolling: "0, 0"
     tiled: false
-    shader: "Wave"
   - texture:
       !type:ImageParallaxTextureSource
       path: "/Textures/_Maid/Parallaxes/Asteroids.png"

@@ -375,7 +375,7 @@
     count: 5
   - type: Machine
     board: ShuttleGunKineticCircuitboard
-#  - type: PressureDamageChange # Goobstation #Maid
+  - type: PressureDamageChange # Goobstation
   - type: UpgradeableGun # Goobstation
     maxUpgradeCapacity: 40
     whitelist:
