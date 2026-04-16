@@ -497,3 +497,9 @@ Entries:
       message: Карта BoxMaid - pahan_chiiiil
   id: 43
   time: '2026-04-13T17:56:43.0000000+00:00'
+- author: Aviu
+  changes:
+    - type: Add
+      message: Выдача оружий после манифеста.
+  id: 44
+  time: '2026-04-16T15:39:03.0000000+00:00'
