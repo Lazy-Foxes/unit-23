@@ -13,7 +13,6 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-using Robust.Shared.Maths;
 
 namespace Content.Server._Maid.RoundEndWeapons;
 
@@ -32,7 +31,6 @@ public sealed class RoundEndWeaponsSystem : EntitySystem
         new SoundPathSpecifier("/Audio/_Maid/Misc/RoundEnd/rezniya.ogg");
 
     private bool _enabled;
-
     public override void Initialize()
     {
         base.Initialize();
@@ -59,7 +57,7 @@ public sealed class RoundEndWeaponsSystem : EntitySystem
             _hands.PickupOrDrop(uid, weapon, handsComp: hands);
         }
 
-        _chatMan.DispatchServerAnnouncement("!!!РЕЗНЯ!!!", Color.Red);
+        _chatMan.DispatchServerAnnouncement(Loc.GetString("round-end-weapon-delivery-start"), Color.Red);
         _audio.PlayGlobal(EndOfRoundSound, Filter.Broadcast(), false);
     }
 }
