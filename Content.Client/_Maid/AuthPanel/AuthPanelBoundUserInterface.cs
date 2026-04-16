@@ -18,8 +18,6 @@ public sealed class AuthPanelBoundUserInterface : BoundUserInterface
         _menu = new AuthPanelMenu();
 
         _menu.OnRedButtonPressed(_ => SendButtonPressed(AuthPanelAction.ERTRecruit));
-        // _menu.OnAccessButtonPressed(_ => SendButtonPressed(AuthPanelAction.AddAccess));
-        // _menu.OnBluespaceWeaponButtonPressed(_ => SendButtonPressed(AuthPanelAction.BluespaceWeapon));
 
         _menu.OnClose += Close;
         _menu.OpenCentered();
@@ -38,12 +36,8 @@ public sealed class AuthPanelBoundUserInterface : BoundUserInterface
 
         var action = confirmationActionState.Action;
 
-        // if (action.Action is AuthPanelAction.AddAccess)
-        //     _menu?.SetAccessCount(action.ConfirmedPeopleCount, action.MaxConfirmedPeopleCount);
         if (action.Action is AuthPanelAction.ERTRecruit)
             _menu?.SetRedCount(action.ConfirmedPeopleCount, action.MaxConfirmedPeopleCount);
-        // if (action.Action is AuthPanelAction.BluespaceWeapon)
-        //     _menu?.SetWeaponCount(action.ConfirmedPeopleCount, action.MaxConfirmedPeopleCount);
 
         _menu?.SetReason(action.Reason);
         if (action.ConfirmedPeopleCount == 0)

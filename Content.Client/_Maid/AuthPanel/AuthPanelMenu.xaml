@@ -23,16 +23,6 @@
                     <Button Name="RedButton" MinWidth="410" Margin="0 5 0 0" HorizontalAlignment="Left" Text="{Loc 'auth-panel-red-button'}"/>
                     <Label Name="RedCount" Margin="25 0 4 0" HorizontalAlignment="Right" Visible="true"/>
                 </BoxContainer>
-
-                <!-- <BoxContainer HorizontalExpand="True" Name="AccessContainer">
-                    <Button Name="AccessButton" MinWidth="410" Margin="0 5 0 0" HorizontalAlignment="Left" Text="{Loc 'auth-panel-access-button'}" Disabled="True"/>
-                    <Label Name="AccessCount" Margin="25 0 4 0" HorizontalAlignment="Right" Visible="False"/>
-                </BoxContainer>
-
-                <BoxContainer HorizontalExpand="True" Name="BluespaceWeaponContainer">
-                    <Button Name="BluespaceWeaponButton" MinWidth="410" Margin="0 5 0 5" HorizontalAlignment="Left" Text="{Loc 'auth-panel-unlock-weapon'}" Disabled="True"/>
-                    <Label Name="BluespaceWeaponCount" Margin="25 0 4 0" HorizontalAlignment="Right" Visible="False"/>
-                </BoxContainer> -->
             </BoxContainer>
         </controls:StripeBack>
 
