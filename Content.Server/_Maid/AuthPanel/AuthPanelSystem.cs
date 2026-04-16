@@ -35,7 +35,7 @@ public sealed class AuthPanelSystem : EntitySystem
     /// <summary>
     /// Minimal Amount of votes needed for action.
     /// </summary>
-    public static int MinCount = 2; // TEMP: 3
+    public static int MinCount = 3; // TEMP: 3
 
     /// <summary>
     /// Amount of minutes before action can be called. Counting from round start.
