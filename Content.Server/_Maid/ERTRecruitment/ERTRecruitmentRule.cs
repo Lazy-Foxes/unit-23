@@ -209,6 +209,9 @@ public sealed class ERTRecruitmentRule : StationEventSystem<ERTRecruitmentRuleCo
         }
         // ERTMap.Shuttle = shuttleId;
 
+        // If return successful then enable it (should be called roundstart)
+        IsDisabled = false;
+
         return outpost.Owner;
     }
 }
