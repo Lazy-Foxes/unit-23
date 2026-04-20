@@ -7,9 +7,25 @@ namespace Content.Client._Maid.AuthPanel;
 [GenerateTypedNameReferences]
 public sealed partial class AuthPanelMenu : FancyWindow
 {
+    private Action<BaseButton.ButtonEventArgs>? _redButtonHandler;
+
     public void OnRedButtonPressed(Action<BaseButton.ButtonEventArgs> func)
     {
-        RedButton.OnPressed += func;
+        if (_redButtonHandler != null)
+            RedButton.OnPressed -= _redButtonHandler;
+
+        _redButtonHandler = func;
+        RedButton.OnPressed += _redButtonHandler;
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing && _redButtonHandler != null)
+        {
+            RedButton.OnPressed -= _redButtonHandler;
+            _redButtonHandler = null;
+        }
+        base.Dispose(disposing);
     }
 
     public void SetCount(Label label, int conf, int maxconf)
