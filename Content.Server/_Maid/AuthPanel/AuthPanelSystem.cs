@@ -32,15 +32,16 @@ public sealed class AuthPanelSystem : EntitySystem
     public Dictionary<AuthPanelAction, HashSet<EntityUid>> Counter = new();
     public Dictionary<AuthPanelAction, HashSet<int>> CardIndexes = new();
     public string Reason = "";
+
     /// <summary>
     /// Minimal Amount of votes needed for action.
     /// </summary>
-    public static int MinCount = 3; // TEMP: 3
+    public static int MinCount = 3;
 
     /// <summary>
     /// Amount of minutes before action can be called. Counting from round start.
     /// </summary>
-    public static int EarliestStart = 0; // TEMP: 60
+    public static int EarliestStart = 20;
 
     /// <summary>
     /// Amount of seconds before action can be called. Counting from previous vote.
@@ -51,6 +52,7 @@ public sealed class AuthPanelSystem : EntitySystem
     /// Amount of minutes before action can be called. Counting from previous call for vote.
     /// </summary>
     public static int TimeoutDuration = 10;
+
     private TimeSpan? _delay;
     private TimeSpan? _timeout;
     public override void Initialize()

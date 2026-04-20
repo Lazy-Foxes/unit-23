@@ -5,7 +5,6 @@ using Content.Server.GameTicking.Events;
 using Content.Server.StationEvents.Events;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
-using Content.Shared._White;
 using JetBrains.Annotations;
 using Robust.Shared.Configuration;
 using Robust.Shared.Map;
