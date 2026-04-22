@@ -13,6 +13,7 @@ using System.Linq;
 using System.Numerics;
 using Content.Goobstation.Common.Actions;
 using Content.Goobstation.Common.Bloodstream;
+using Content.Goobstation.Shared.Religion;
 using Content.Server._Goobstation.Wizard.Components;
 using Content.Server.Antag;
 using Content.Server.Body.Systems;
@@ -100,6 +101,7 @@ public sealed class SpellsSystem : SharedSpellsSystem
     [Dependency] private readonly TurfSystem _turf = default!;
     [Dependency] private readonly SharedItemSystem _item = default!;
     [Dependency] private readonly TileFrictionController _tileFriction = default!;
+    [Dependency] private readonly DivineInterventionSystem _divineIntervention = default!;
 
     public override void Initialize()
     {
@@ -177,6 +179,9 @@ public sealed class SpellsSystem : SharedSpellsSystem
         var coords = TransformSystem.GetMapCoordinates(ev.Performer);
         foreach (var uid in Lookup.GetEntitiesInRange(coords, ev.Range))
         {
+            if (_divineIntervention.TouchSpellDenied(uid))
+                continue;
+
             _emp.TryEmpEffects(uid, ev.EnergyConsumption, ev.DisableDuration);
         }
 
@@ -230,6 +235,9 @@ public sealed class SpellsSystem : SharedSpellsSystem
                 continue;
 
             if (entity == ev.Performer)
+                continue;
+
+            if (_divineIntervention.TouchSpellDenied(entity))
                 continue;
 
             if (!_gravityWell.CanGravPulseAffect(entity))
