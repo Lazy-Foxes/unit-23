@@ -1,7 +1,6 @@
 - type: entity
   id: ERTRecruitment
   parent: BaseGameRule
-  noSpawn: true
   components:
     - type: StationEvent
       weight: 0

@@ -13,9 +13,6 @@
     - type: InteractionOutline
     - type: Appearance
     - type: AuthPanel
-    - type: GuideHelp
-      guides:
-      - AuthPanel
     - type: Sprite
       noRot: false
       sprite: _Maid/Structures/Wallmounts/auth.rsi
