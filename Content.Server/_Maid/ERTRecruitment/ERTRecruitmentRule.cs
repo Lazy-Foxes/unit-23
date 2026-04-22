@@ -144,6 +144,9 @@ public sealed class ERTRecruitmentRule : StationEventSystem<ERTRecruitmentRuleCo
 
     private void OnRoundStart(RoundStartingEvent ev)
     {
+        // Always reset per-round state, regardless of whether the outpost map is loaded.
+        IsDisabled = false;
+
         // Disabled in dev - Resources/ConfigPresets/Build/development.toml
         if (_cfgManager.GetCVar(MaidCVars.LoadErtMap))
             SpawnOutpostMap();
