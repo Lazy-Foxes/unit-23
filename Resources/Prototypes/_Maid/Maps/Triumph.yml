@@ -15,8 +15,6 @@
       - type: StationEmergencyShuttle
         emergencyShuttlePath: /Maps/Shuttles/emergency_omega.yml
       - type: StationJobs
-        overflowJobs:
-        - Passenger
         availableJobs:
           #service
           Captain: [ 1, 1 ]
@@ -65,4 +63,4 @@
           Boxer: [ 2, 2 ]
           #silicon
           StationAi: [ 1, 1 ]
-          Borg: [ 3, 2 ]
+          Borg: [ 3, 3 ]
