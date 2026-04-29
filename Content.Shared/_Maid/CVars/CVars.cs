@@ -1,3 +1,4 @@
+using Content.Shared._Maid.UserInterface;
 using Robust.Shared.Configuration;
 
 namespace Content.Shared._Maid.CVars;
@@ -52,6 +53,12 @@ public sealed class MaidCVars
     /// </summary>
     public static readonly CVarDef<bool> HeightSliders =
         CVarDef.Create("maid.height_sliders_enabled", false, CVar.SERVER | CVar.REPLICATED);
+
+    /// <summary>
+    ///Controls detailed examine panel style.
+    /// </summary>
+    public static readonly CVarDef<int> DetailedExamineStyle =
+        CVarDef.Create("maid.detailed_examine_style", (int)DetailedExamineType.Fancy, CVar.ARCHIVE | CVar.REPLICATED | CVar.CLIENT);
 
     #endregion
 }
