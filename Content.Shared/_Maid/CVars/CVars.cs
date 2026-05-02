@@ -60,5 +60,17 @@ public sealed class MaidCVars
     public static readonly CVarDef<int> DetailedExamineStyle =
         CVarDef.Create("maid.detailed_examine_style", (int)DetailedExamineType.Fancy, CVar.ARCHIVE | CVar.REPLICATED | CVar.CLIENT);
 
+    /// <summary>
+    ///     Do generate Ert map on round start or not
+    /// </summary>
+    public static readonly CVarDef<bool> LoadErtMap =
+        CVarDef.Create("maid.load_ert_map", true, CVar.SERVERONLY);
+
+    /// <summary>
+    ///     Should players get a random weapon on roundend
+    /// </summary>
+    public static readonly CVarDef<bool> RoundEndWeapons =
+        CVarDef.Create("maid.round_end_weapons_enabled", true, CVar.SERVERONLY);
+
     #endregion
 }
