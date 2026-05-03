@@ -370,6 +370,10 @@ namespace Content.Server.Ghost
             if (Deleted(uid) || Terminating(uid))
                 return;
 
+            // MAID BEGIN fix ghost deletion
+            _minds.DisableGhostOnShutdown(uid);
+            // MAID END
+
             QueueDel(uid);
         }
 
