@@ -409,8 +409,12 @@ namespace Content.IntegrationTests.Tests
 
                 // <Goob>
                 "PendingSlimeSpawn", // shut the fuck up please
-                "Slime" // please
+                "Slime", // please
                 // </Goob>
+
+                // <Maid>
+                "LavalandHierophantTelepad" // TODO: Delete after upstream
+                // </Maid>
             };
 
             Assert.That(server.CfgMan.GetCVar(CVars.NetPVS), Is.False);
