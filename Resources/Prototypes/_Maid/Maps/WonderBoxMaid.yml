@@ -4,7 +4,7 @@
   mapPath: /Maps/_Maid/WonderBoxMaid.yml
   minPlayers: 20
   stations:
-    WonderBoxStation:
+    WonderBoxMaidStation:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

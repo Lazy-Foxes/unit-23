@@ -13090,7 +13090,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: WonderBoxStation
+      id: WonderBoxMaidStation
     - type: MaterialStorage
       storage: {}
     - type: SpreaderGrid
