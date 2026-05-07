@@ -9617,12 +9617,6 @@ entities:
     - type: Transform
       pos: 31.477634,-79.4623
       parent: 2
-- proto: ActionToggleLight
-  entities:
-  - uid: 7
-    components:
-    - type: Transform
-      parent: 6
 - proto: AirAlarm
   entities:
   - uid: 8
@@ -70450,27 +70444,6 @@ entities:
     - type: Transform
       pos: 3.1967216,3.6603613
       parent: 2
-- proto: FlashlightLantern
-  entities:
-  - uid: 6
-    components:
-    - type: Transform
-      pos: 20.983997,21.51571
-      parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 7
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 7
-    - type: ActionsContainer
   - uid: 10663
     components:
     - type: Transform
