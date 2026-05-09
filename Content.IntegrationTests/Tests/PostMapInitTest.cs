@@ -194,6 +194,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_Goobstation/Shuttles/retort_engineering.yml",
             "/Maps/_Goobstation/Shuttles/retort_janitorial.yml",
             "/Maps/_Goobstation/Shuttles/retort_cburn.yml",
+            "/Maps/_Maid/Maps/CentcommMaid.yml", // Maid
         };
 
         private static readonly string[] GameMaps =
@@ -245,7 +246,8 @@ namespace Content.IntegrationTests.Tests
               "BoxMaid", // Maid
               "BagelMaid", // Maid
               "KettleMaid", // Maid
-              "ScoupidiaMaid" // Maid
+              "ScoupidiaMaid", // Maid
+              "CentcommMaid" // Maid
         };
         // Goobstation edit start, yeah i know, but this is easier and less load than loading protoman or something.
         private static readonly string[] GameMapsInCurrentPool = // plus dev
@@ -294,7 +296,8 @@ namespace Content.IntegrationTests.Tests
               "BoxMaid", // Maid
               "BagelMaid", // Maid
               "KettleMaid", // Maid
-              "ScoupidiaMaid" // Maid
+              "ScoupidiaMaid", // Maid
+              "CentcommMaid" // Maid
         };
         // Goobstation edit end
 
