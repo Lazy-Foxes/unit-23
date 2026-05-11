@@ -2,8 +2,8 @@
   id: AtomMaid
   mapName: 'Atom Station'
   mapPath: /Maps/_Maid/AtomMaid.yml
-  minPlayers: 0
-  maxPlayers: 5
+  minPlayers: 50 # lol
+  maxPlayers: 50 # omg
   stations:
     AtomMaidStation:
       stationProto: StandardNanotrasenStation
