@@ -4,3 +4,4 @@ tiles-wood-bright3 = пол сломанный светлый деревянны
 tiles-wood-bright-large = большой деревянный светлый пол
 ent-FloorTileItemWoodBrightLarge = большой деревянный светлый пол
     .desc = Может послужить неплохим метательным оружием.
+ent-FloorTileWoodBrightLarge = большой деревянный светлый пол
