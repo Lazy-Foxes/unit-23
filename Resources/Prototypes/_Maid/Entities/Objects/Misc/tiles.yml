@@ -29,3 +29,19 @@
       - FloorWoodBrightTile
   - type: Stack
     stackType: FloorTileWoodBrightPattern
+
+- type: entity
+  name: wood floor large
+  parent: FloorTileItemBase
+  id: FloorTileItemWoodBrightLarge
+  components:
+  - type: Sprite
+    state: wood
+  - type: Item
+    heldPrefix: wood
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorWoodBrightLarge
+  - type: Stack
+    stackType: FloorTileWoodBrightLarge
