@@ -81,6 +81,6 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: FloorTileItemWoodBright
+  itemDrop: FloorTileItemWoodBrightLarge
   heatCapacity: 10000
   tileRipResistance: 80
