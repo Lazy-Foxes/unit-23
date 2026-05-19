@@ -181,7 +181,10 @@ public sealed class SpecialRespawnSystem : SharedSpecialRespawnSystem
             return;
 
         if (TryFindRespawnTarget(component.Tag, out var targetCoords)) // MAID nuke disk respawn
+        {
             Respawn(uid, component.Prototype, targetCoords.Value); // MAID nuke disk respawn
+            return; // MAID nuke disk respawn
+        }
 
         if (TryFindRandomTile(entityGridUid.Value, entityMapUid.Value, 10, out var coords))
             Respawn(uid, component.Prototype, coords);
