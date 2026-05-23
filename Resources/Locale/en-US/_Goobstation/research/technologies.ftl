@@ -40,3 +40,4 @@ research-technology-xenobiology = Xenobiological Equipment
 research-technology-xenobag-holding = Bluespace Xenobiological Equipment
 research-technology-advanced-power-generation = Advanced Power Generation
 research-technology-extended-communication = Extended Communications
+research-technology-service-energy-chem = Organic Electrosynthesis
