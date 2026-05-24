@@ -27,3 +27,21 @@
   name: stack-wood-floor-parquet
   spawn: FloorTileItemWoodParquet
   maxCount: 30
+
+- type: stack
+  id: FloorTileWoodLarge
+  name: stack-large-wood-floor
+  spawn: FloorTileItemWoodLarge
+  maxCount: 30
+
+- type: stack
+  id: FloorTileWood
+  name: stack-wood-floor
+  spawn: FloorTileItemWood
+  maxCount: 30
+
+- type: stack
+  id: FloorTileWoodPattern
+  name: stack-wood-pattern-floor
+  spawn: FloorTileItemWoodPattern
+  maxCount: 30
