@@ -1,4 +1,12 @@
 ent-FloorTileItemWoodBright = светлый деревянный пол
-    .desc = { ent-FloorTileItemBase.desc }
+    .desc = Может послужить неплохим метательным оружием.
 ent-FloorTileItemWoodBrightPattern = светлый деревянный узорчатый пол
-    .desc = { ent-FloorTileItemBase.desc }
+    .desc = Может послужить неплохим метательным оружием.
+ent-FloorTileItemWoodParquet = деревянный паркет
+    .desc = Может послужить неплохим метательным оружием.
+ent-FloorTileItemWoodBrightParquet = светлый деревянный паркет
+    .desc = Может послужить неплохим метательным оружием.
+ent-FloorTileWoodBrightLarge = большой деревянный светлый пол
+    .desc = Может послужить неплохим метательным оружием.
+ent-FloorTileItemWoodBrightLarge = большой деревянный светлый пол
+    .desc = Может послужить неплохим метательным оружием.
