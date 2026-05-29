@@ -1811,7 +1811,7 @@
     - Monkey
     - Kobold
 #  - type: SentienceTarget
-    flavorKind: station-event-random-sentience-flavor-primate
+    #flavorKind: station-event-random-sentience-flavor-primate
   - type: AlwaysRevolutionaryConvertible
   - type: GhostRole
     prob: 0.05

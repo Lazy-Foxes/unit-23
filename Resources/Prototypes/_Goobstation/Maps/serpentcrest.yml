@@ -70,7 +70,6 @@
             Mime: [ 1, 1 ]
             Musician: [ 2, 2 ]
             Reporter: [ 1, 1]
-            RadioHost: [ 1, 1]
             #silicon
             StationAi: [ 1, 1 ]
             Borg: [ 4, 5 ]
