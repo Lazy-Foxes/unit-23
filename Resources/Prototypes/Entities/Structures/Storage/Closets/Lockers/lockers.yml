@@ -446,6 +446,7 @@
     stateDoorOpen: shotguncase_open
     stateDoorClosed: shotguncase_door
   - type: AccessReader
+    access: [["Armory"]] # MAID fix GunSafe no access
   - type: Construction
     graph: GunSafe
     node: done
