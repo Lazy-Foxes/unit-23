@@ -1095,3 +1095,5 @@ AirlockJournalismGlassLocked: AirlockServiceGlassLocked
 AirlockMaintJournalismLocked: AirlockMaintServiceLocked
 AirlockJournalismLocked: AirlockServiceLocked
 CrateRadioStationAds: null
+CrateRadioStationVinyls: null
+SpawnPointRadioHost: null
