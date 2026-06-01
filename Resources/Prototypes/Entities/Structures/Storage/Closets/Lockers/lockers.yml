@@ -99,9 +99,9 @@
   - type: Appearance
   - type: EntityStorageVisuals
     # Lavaland Change start - new sprite for the locker
-    stateBaseClosed: cargo
-    stateDoorOpen: cargo_open
-    stateDoorClosed: salvage_door
+    stateBaseClosed: mining
+    stateDoorOpen: mining_open
+    stateDoorClosed: mining_door
     # Lavaland Change end
   - type: AccessReader
     access: [["Salvage"]]
