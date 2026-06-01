@@ -1771,13 +1771,6 @@ entities:
     - type: Transform
       pos: 9.5,1.5
       parent: 2
-- proto: MachineFTLDrive
-  entities:
-  - uid: 157
-    components:
-    - type: Transform
-      pos: 7.5,1.5
-      parent: 2
 - proto: Mannequin
   entities:
   - uid: 448
