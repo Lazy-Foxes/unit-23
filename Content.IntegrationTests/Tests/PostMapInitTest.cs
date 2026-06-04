@@ -287,7 +287,6 @@ namespace Content.IntegrationTests.Tests
               "Reach",
               "Saltern",
               "Serpentcrest",
-              "Submarine",
               "WonderBoxMaid", // Maid
               "AtomMaid", // Maid
               "TriumphMaid", // Maid
