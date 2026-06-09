@@ -94,6 +94,20 @@ entities:
       id: Empty
     - type: OccluderTree
     - type: Shuttle
+    - type: CustomFTLSound
+      startupSound:
+        path: /Audio/Effects/Shuttle/Arrivals/hyperspace_begin.ogg
+        params:
+          volume: -5
+      arrivalSound:
+        path: /Audio/Effects/Shuttle/Arrivals/hyperspace_end.ogg
+        params:
+          volume: -5
+      travelSound:
+        path: /Audio/Effects/Shuttle/Arrivals/hyperspace_progress.ogg
+        params:
+          volume: -5
+          repeat: true
     - type: DeviceNetwork
       configurators: []
       deviceLists: []
